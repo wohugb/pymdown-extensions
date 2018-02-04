@@ -3,44 +3,44 @@
 
 
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="zh" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="A Collection of Useful Extensions for Python Markdown">
+        <meta name="description" content="Python Markdown的有用扩展的集合">
       
       
-        <link rel="canonical" href="https://facelessuser.github.io/pymdown-extensions/extensions/escapeall/">
+        <link rel="canonical" href="https://wohugb.github.io/pymdown-extensions/extensions/escapeall/">
       
       
       
-        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+        <meta name="lang:clipboard.copy" content="复制">
       
-        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+        <meta name="lang:clipboard.copied" content="已复制">
       
-        <meta name="lang:search.language" content="en">
+        <meta name="lang:search.language" content="jp">
       
-        <meta name="lang:search.result.none" content="No matching documents">
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
       
-        <meta name="lang:search.result.one" content="1 matching document">
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
       
-        <meta name="lang:search.result.other" content="# matching documents">
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
       
-        <meta name="lang:search.tokenizer" content="[\s\-]+">
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.0">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.2.5">
     
     
       
-        <title>EscapeAll - PyMdown Extensions Documentation</title>
+        <title>EscapeAll(转义) - PyMdown 扩展文档</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.2a88008a.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.bcabdff3.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-palette.792431c1.css">
       
@@ -61,10 +61,11 @@
     
   </head>
   
-  
     
     
-    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="blue">
+    
+      <body data-md-color-primary="blue" data-md-color-accent="blue">
+    
   
     <svg class="md-svg">
       <defs>
@@ -82,7 +83,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://facelessuser.github.io/pymdown-extensions" title="PyMdown Extensions Documentation" class="md-header-nav__button md-logo">
+        <a href="https://wohugb.github.io/pymdown-extensions" title="PyMdown 扩展文档" class="md-header-nav__button md-logo">
           
             <i class="md-icon">description</i>
           
@@ -96,10 +97,10 @@
           
             
               <span class="md-header-nav__topic">
-                PyMdown Extensions Documentation
+                PyMdown 扩展文档
               </span>
               <span class="md-header-nav__topic">
-                EscapeAll
+                EscapeAll(转义)
               </span>
             
           
@@ -112,19 +113,17 @@
             
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner" role="search">
+  <div class="md-search__inner">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" required placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="result">
           <div class="md-search-result__meta">
-            Type to start searching
+            键入以开始搜索
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -144,7 +143,7 @@
   
 
 
-  <a href="https://github.com/facelessuser/pymdown-extensions/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/wohugb/pymdown-extensions/" title="前往 Github 仓库" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -180,8 +179,8 @@
         
   <li class="md-tabs__item">
     
-      <a href="../.." title="PyMdown Extensions" class="md-tabs__link">
-        PyMdown Extensions
+      <a href="../.." title="简介" class="md-tabs__link">
+        简介
       </a>
     
   </li>
@@ -196,8 +195,8 @@
   
     <li class="md-tabs__item">
       
-        <a href="../arithmatex/" title="Extensions" class="md-tabs__link md-tabs__link--active">
-          Extensions
+        <a href="../arithmatex/" title="扩展" class="md-tabs__link md-tabs__link--active">
+          扩展
         </a>
       
     </li>
@@ -232,7 +231,7 @@
         <i class="md-icon">description</i>
       
     </span>
-    PyMdown Extensions Documentation
+    PyMdown 扩展文档
   </label>
   
     <div class="md-nav__source">
@@ -242,7 +241,7 @@
   
 
 
-  <a href="https://github.com/facelessuser/pymdown-extensions/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/wohugb/pymdown-extensions/" title="前往 Github 仓库" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -265,8 +264,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="PyMdown Extensions" class="md-nav__link">
-      PyMdown Extensions
+    <a href="../.." title="简介" class="md-nav__link">
+      简介
     </a>
   </li>
 
@@ -277,8 +276,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../installation/" title="Installation" class="md-nav__link">
-      Installation
+    <a href="../../installation/" title="安装" class="md-nav__link">
+      安装
     </a>
   </li>
 
@@ -289,8 +288,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../usage_notes/" title="Usage Notes" class="md-nav__link">
-      Usage Notes
+    <a href="../../usage_notes/" title="使用说明" class="md-nav__link">
+      使用说明
     </a>
   </li>
 
@@ -307,11 +306,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
-      Extensions
+      扩展
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
-        Extensions
+        扩展
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -322,8 +321,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../arithmatex/" title="Arithmatex" class="md-nav__link">
-      Arithmatex
+    <a href="../arithmatex/" title="Arithmatex(数学公式)" class="md-nav__link">
+      Arithmatex(数学公式)
     </a>
   </li>
 
@@ -334,8 +333,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../b64/" title="B64" class="md-nav__link">
-      B64
+    <a href="../b64/" title="B64(图片BASE64)" class="md-nav__link">
+      B64(图片BASE64)
     </a>
   </li>
 
@@ -346,8 +345,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../betterem/" title="BetterEm" class="md-nav__link">
-      BetterEm
+    <a href="../betterem/" title="BetterEm(加粗斜体增强)" class="md-nav__link">
+      BetterEm(加粗斜体增强)
     </a>
   </li>
 
@@ -358,8 +357,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../caret/" title="Caret" class="md-nav__link">
-      Caret
+    <a href="../caret/" title="Caret(上标)" class="md-nav__link">
+      Caret(上标)
     </a>
   </li>
 
@@ -370,8 +369,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../critic/" title="Critic" class="md-nav__link">
-      Critic
+    <a href="../critic/" title="Critic(评论家)" class="md-nav__link">
+      Critic(评论家)
     </a>
   </li>
 
@@ -382,8 +381,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../details/" title="Details" class="md-nav__link">
-      Details
+    <a href="../details/" title="Details(细节)" class="md-nav__link">
+      Details(细节)
     </a>
   </li>
 
@@ -394,8 +393,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../emoji/" title="Emoji" class="md-nav__link">
-      Emoji
+    <a href="../emoji/" title="Emoji(表情)" class="md-nav__link">
+      Emoji(表情)
     </a>
   </li>
 
@@ -415,11 +414,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        EscapeAll
+        EscapeAll(转义)
       </label>
     
-    <a href="./" title="EscapeAll" class="md-nav__link md-nav__link--active">
-      EscapeAll
+    <a href="./" title="EscapeAll(转义)" class="md-nav__link md-nav__link--active">
+      EscapeAll(转义)
     </a>
     
       
@@ -429,19 +428,19 @@
     
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
+    <label class="md-nav__title" for="toc">目录</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" title="Overview" class="md-nav__link">
-    Overview
+  <a href="#概观" title="概观" class="md-nav__link">
+    概观
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#options" title="Options" class="md-nav__link">
-    Options
+  <a href="#选项" title="选项" class="md-nav__link">
+    选项
   </a>
   
 </li>
@@ -461,8 +460,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extra/" title="Extra" class="md-nav__link">
-      Extra
+    <a href="../extra/" title="Extra(扩展)" class="md-nav__link">
+      Extra(扩展)
     </a>
   </li>
 
@@ -473,8 +472,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extrarawhtml/" title="ExtraRawHTML" class="md-nav__link">
-      ExtraRawHTML
+    <a href="../extrarawhtml/" title="ExtraRawHTML(html)" class="md-nav__link">
+      ExtraRawHTML(html)
     </a>
   </li>
 
@@ -497,8 +496,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../highlight/" title="Highlight" class="md-nav__link">
-      Highlight
+    <a href="../highlight/" title="Highlight(高亮)" class="md-nav__link">
+      Highlight(高亮)
     </a>
   </li>
 
@@ -509,8 +508,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../inlinehilite/" title="InlineHilite" class="md-nav__link">
-      InlineHilite
+    <a href="../inlinehilite/" title="InlineHilite(行内高亮)" class="md-nav__link">
+      InlineHilite(行内高亮)
     </a>
   </li>
 
@@ -521,8 +520,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../keys/" title="Keys" class="md-nav__link">
-      Keys
+    <a href="../keys/" title="Keys(按键)" class="md-nav__link">
+      Keys(按键)
     </a>
   </li>
 
@@ -533,8 +532,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../magiclink/" title="MagicLink" class="md-nav__link">
-      MagicLink
+    <a href="../magiclink/" title="MagicLink(魔术链接)" class="md-nav__link">
+      MagicLink(魔术链接)
     </a>
   </li>
 
@@ -545,8 +544,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../mark/" title="Mark" class="md-nav__link">
-      Mark
+    <a href="../mark/" title="Mark(做记号)" class="md-nav__link">
+      Mark(做记号)
     </a>
   </li>
 
@@ -557,8 +556,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../pathconverter/" title="PathConverter" class="md-nav__link">
-      PathConverter
+    <a href="../pathconverter/" title="PathConverter(路径转换)" class="md-nav__link">
+      PathConverter(路径转换)
     </a>
   </li>
 
@@ -569,8 +568,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../striphtml/" title="StripHTML" class="md-nav__link">
-      StripHTML
+    <a href="../striphtml/" title="StripHTML(转义html)" class="md-nav__link">
+      StripHTML(转义html)
     </a>
   </li>
 
@@ -581,8 +580,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../progressbar/" title="ProgressBar" class="md-nav__link">
-      ProgressBar
+    <a href="../progressbar/" title="ProgressBar(进度条)" class="md-nav__link">
+      ProgressBar(进度条)
     </a>
   </li>
 
@@ -593,8 +592,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../smartsymbols/" title="SmartSymbols" class="md-nav__link">
-      SmartSymbols
+    <a href="../smartsymbols/" title="SmartSymbols(智能符号)" class="md-nav__link">
+      SmartSymbols(智能符号)
     </a>
   </li>
 
@@ -605,8 +604,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../snippets/" title="Snippets" class="md-nav__link">
-      Snippets
+    <a href="../snippets/" title="Snippets(片段)" class="md-nav__link">
+      Snippets(片段)
     </a>
   </li>
 
@@ -617,8 +616,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../superfences/" title="SuperFences" class="md-nav__link">
-      SuperFences
+    <a href="../superfences/" title="SuperFences(超级栅栏)" class="md-nav__link">
+      SuperFences(超级栅栏)
     </a>
   </li>
 
@@ -629,8 +628,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../tasklist/" title="Tasklist" class="md-nav__link">
-      Tasklist
+    <a href="../tasklist/" title="Tasklist(任务列表)" class="md-nav__link">
+      Tasklist(任务列表)
     </a>
   </li>
 
@@ -641,8 +640,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../tilde/" title="Tilde" class="md-nav__link">
-      Tilde
+    <a href="../tilde/" title="Tilde(波浪号)" class="md-nav__link">
+      Tilde(波浪号)
     </a>
   </li>
 
@@ -658,8 +657,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../miscellaneous_extras/" title="Miscellaneous Extras" class="md-nav__link">
-      Miscellaneous Extras
+    <a href="../../miscellaneous_extras/" title="其他附加" class="md-nav__link">
+      其他附加
     </a>
   </li>
 
@@ -670,8 +669,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../contributing/" title="Contributing &amp; Support" class="md-nav__link">
-      Contributing &amp; Support
+    <a href="../../contributing/" title="贡献 &amp; 支持" class="md-nav__link">
+      贡献 &amp; 支持
     </a>
   </li>
 
@@ -682,8 +681,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../development/" title="Development" class="md-nav__link">
-      Development
+    <a href="../../development/" title="发展" class="md-nav__link">
+      发展
     </a>
   </li>
 
@@ -694,8 +693,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../changelog/" title="Changelog" class="md-nav__link">
-      Changelog
+    <a href="../../changelog/" title="更新日志" class="md-nav__link">
+      更新日志
     </a>
   </li>
 
@@ -706,8 +705,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../license/" title="License" class="md-nav__link">
-      License
+    <a href="../../license/" title="许可" class="md-nav__link">
+      许可
     </a>
   </li>
 
@@ -729,19 +728,19 @@
     
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
+    <label class="md-nav__title" for="toc">目录</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" title="Overview" class="md-nav__link">
-    Overview
+  <a href="#概观" title="概观" class="md-nav__link">
+    概观
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#options" title="Options" class="md-nav__link">
-    Options
+  <a href="#选项" title="选项" class="md-nav__link">
+    选项
   </a>
   
 </li>
@@ -760,42 +759,46 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/facelessuser/pymdown-extensions/tree/master/docs/src/markdown/extensions/escapeall.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/wohugb/pymdown-extensions/tree/master/docs/src/markdown/extensions/escapeall.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                 <h1 id="escapeall">EscapeAll<a class="headerlink" href="#escapeall" title="Permanent link"></a></h1>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link"></a></h2>
-<p>If you ever have to stop and try to remember, <em>Can I escape this char?</em> or <em>Will backslash escape this?</em>, you are not alone.  EscapeAll makes <code>\</code> escape everything making such questions moot.  Now instead of questioning or looking up what can be escaped, you can expect that <code>\</code> will escape the character following it.  So if you need a literal <code>\</code>, just escape it: <code>\\</code>.  Keep in mind this will not escape things in code blocks of any kind.</p>
+<h2 id="概观">概观<a class="headerlink" href="#概观" title="Permanent link"></a></h2>
+<p>如果你不得不停下来试着记住，<em>我可以逃避这个字符吗？</em>或者<em>反斜杠是否会逃避这个？</em>，你并不孤单。
+EscapeAll让<code>\</code>逃脱了所有这些问题。
+现在，不要质疑或查找可以被转义的内容，而是可以期望<code>\</code>将转义后面的字符。
+所以，如果你需要一个字面的<code>\</code>，只需要转义：<code>\\</code>。
+请记住，这不会在任何类型的代码块中转义。</p>
 <div class="admonition example">
-<p class="admonition-title">Escape Example</p>
+<p class="admonition-title">转义示例</p>
 <div class="codehilite"><pre><span></span>\W\e\ \c\a\n\ \e\s\c\a\p\e
 \e\v\e\r\y\t\h\i\n\g\!\ \
 \❤\😄
 </pre></div>
 
 <p>We&nbsp;can&nbsp;escape
-everything!&nbsp;<br />
+everything!&nbsp;`
 ❤😄</p>
 </div>
-<p>There are two special escapes among all of these escapes though: escaping "space" characters and escaping "newline" characters. If <code>nbsp</code> is enabled, an escaped space will be converted into a non-breaking space: <code class="codehilite"><span class="ni">&amp;nbsp;</span></code>. If <code>hardbreak</code> is enabled, an escaped newline will be converted to a hard break <code class="codehilite"><span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span></code>. The advantage of <code>hardbreak</code> is that you can visually see the hard break opposed to Markdown's default method of two spaces at the end of a line.</p>
-<p>So in short, EscapeAll escapes all inline characters.</p>
+<p>在这些转义中有两个特殊的转义：逃避“空格”字符和转义“换行”字符。,如果启用了<code>nbsp</code>，转义空间将被转换为一个不间断的空格：<code class="codehilite">＆nbsp;</code>。,如果<code>hardbreak</code>被启用，转义换行符将被转换为硬中断<code class="codehilite"><span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span></code>。 ,“hardbreak”的优点是，你可以直观地看到与Markdown的默认方法相反，在行尾有两个空格。</p>
+<p>所以简而言之，EscapeAll会转义所有的内嵌字符。</p>
 <div class="admonition question">
 <p class="admonition-title">Q &amp; A</p>
-<p><strong>So all ASCII characters?</strong></p>
-<p><em>It escapes everything.</em></p>
-<p><strong>What about Unicode?</strong></p>
-<p><em>It escapes everything!</em></p>
-<p><strong>What about&hellip;</strong></p>
-<p><em>EVERYTHING! IT ESCAPES EVERYTHING!</em></p>
+<p><strong>那么所有的ASCII字符？</strong></p>
+<p><em>它逃脱了一切。</em></p>
+<p><strong>那么Unicode呢？</strong></p>
+<p><em>它逃脱了一切！</em></p>
+<p><strong>关于什么&hellip;</strong></p>
+<p><em>一切！,它可以逃脱一切！</em></p>
 </div>
-<h2 id="options">Options<a class="headerlink" href="#options" title="Permanent link"></a></h2>
+<h2 id="选项">选项<a class="headerlink" href="#选项" title="Permanent link"></a></h2>
 <table>
 <thead>
 <tr>
-<th>Option</th>
-<th>Type</th>
-<th>Default</th>
-<th>Description</th>
+<th>选项</th>
+<th>类型</th>
+<th>类型</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
@@ -803,13 +806,13 @@ everything!&nbsp;<br />
 <td><code>hardbreak</code></td>
 <td>bool</td>
 <td><code class="codehilite"><span class="kc">False</span></code></td>
-<td>Escaped newlines will be hard breaks: <code class="codehilite"><span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span></code>.</td>
+<td>转义的换行符将会是一个难题：<code class="codehilite"><span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span></code>。</td>
 </tr>
 <tr>
 <td><code>nbsp</code></td>
 <td>bool</td>
 <td><code class="codehilite"><span class="kc">False</span></code></td>
-<td>Escaped spaces will be non-breaking spaces: <code class="codehilite"><span class="ni">&amp;nbsp;</span></code>.</td>
+<td>转义的空格将是不间断的空格：<code class="codehilite">＆nbsp;</code>。</td>
 </tr>
 </tbody>
 </table>
@@ -831,28 +834,28 @@ everything!&nbsp;<br />
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../emoji/" title="Emoji" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../emoji/" title="Emoji(表情)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
-                  Previous
+                  后退
                 </span>
-                Emoji
+                Emoji(表情)
               </span>
             </div>
           </a>
         
         
-          <a href="../extra/" title="Extra" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../extra/" title="Extra(扩展)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
-                  Next
+                  前进
                 </span>
-                Extra
+                Extra(扩展)
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -868,8 +871,8 @@ everything!&nbsp;<br />
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2014 - 2017 <a href="https://github.com/facelessuser">Isaac Muse</a>
-<br><span class="md-footer-custom-text">emoji provided free by </span><a href="http://www.emojione.com">EmojiOne</a>
+            版权 &copy; 2014 - 2018 <a href="https://github.com/facelessuser">艾萨克·穆</a>
+<br><span class="md-footer-custom-text">表情符号免费提供</span><a href="http://www.emojione.com">EmojiOne</a>
 
           </div>
         
@@ -885,7 +888,15 @@ everything!&nbsp;<br />
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-      <a href="https://github.com/facelessuser" class="md-footer-social__link fa fa-github"></a>
+      <a href="https://github.com/wohugb/pymdown-extensions" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="http://wohugb.github.io" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/wohugb" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/wohugb" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/wohugb" class="md-footer-social__link fa fa-linkedin"></a>
     
   </div>
 
@@ -896,7 +907,22 @@ everything!&nbsp;<br />
       
     </div>
     
-      <script src="../../assets/javascripts/application.ce2ab4bf.js"></script>
+      <script src="../../assets/javascripts/application.6cdc17f0.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              <script src="../../assets/javascripts/lunr/lunr.jp.js"></script>
+            
+          
+          
+        
       
       <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
       

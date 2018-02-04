@@ -3,44 +3,44 @@
 
 
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="zh" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="A Collection of Useful Extensions for Python Markdown">
+        <meta name="description" content="Python Markdown的有用扩展的集合">
       
       
-        <link rel="canonical" href="https://facelessuser.github.io/pymdown-extensions/development/">
+        <link rel="canonical" href="https://wohugb.github.io/pymdown-extensions/development/">
       
       
       
-        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+        <meta name="lang:clipboard.copy" content="复制">
       
-        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+        <meta name="lang:clipboard.copied" content="已复制">
       
-        <meta name="lang:search.language" content="en">
+        <meta name="lang:search.language" content="jp">
       
-        <meta name="lang:search.result.none" content="No matching documents">
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
       
-        <meta name="lang:search.result.one" content="1 matching document">
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
       
-        <meta name="lang:search.result.other" content="# matching documents">
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
       
-        <meta name="lang:search.tokenizer" content="[\s\-]+">
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.0">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.2.5">
     
     
       
-        <title>Development - PyMdown Extensions Documentation</title>
+        <title>发展 - PyMdown 扩展文档</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.2a88008a.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.bcabdff3.css">
       
         <link rel="stylesheet" href="../assets/stylesheets/application-palette.792431c1.css">
       
@@ -61,10 +61,11 @@
     
   </head>
   
-  
     
     
-    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="blue">
+    
+      <body data-md-color-primary="blue" data-md-color-accent="blue">
+    
   
     <svg class="md-svg">
       <defs>
@@ -82,7 +83,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://facelessuser.github.io/pymdown-extensions" title="PyMdown Extensions Documentation" class="md-header-nav__button md-logo">
+        <a href="https://wohugb.github.io/pymdown-extensions" title="PyMdown 扩展文档" class="md-header-nav__button md-logo">
           
             <i class="md-icon">description</i>
           
@@ -96,10 +97,10 @@
           
             
               <span class="md-header-nav__topic">
-                PyMdown Extensions Documentation
+                PyMdown 扩展文档
               </span>
               <span class="md-header-nav__topic">
-                Development
+                发展
               </span>
             
           
@@ -112,19 +113,17 @@
             
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner" role="search">
+  <div class="md-search__inner">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" required placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="result">
           <div class="md-search-result__meta">
-            Type to start searching
+            键入以开始搜索
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -144,7 +143,7 @@
   
 
 
-  <a href="https://github.com/facelessuser/pymdown-extensions/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/wohugb/pymdown-extensions/" title="前往 Github 仓库" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -178,8 +177,8 @@
         
   <li class="md-tabs__item">
     
-      <a href=".." title="PyMdown Extensions" class="md-tabs__link md-tabs__link--active">
-        PyMdown Extensions
+      <a href=".." title="简介" class="md-tabs__link md-tabs__link--active">
+        简介
       </a>
     
   </li>
@@ -194,8 +193,8 @@
   
     <li class="md-tabs__item">
       
-        <a href="../extensions/arithmatex/" title="Extensions" class="md-tabs__link">
-          Extensions
+        <a href="../extensions/arithmatex/" title="扩展" class="md-tabs__link">
+          扩展
         </a>
       
     </li>
@@ -230,7 +229,7 @@
         <i class="md-icon">description</i>
       
     </span>
-    PyMdown Extensions Documentation
+    PyMdown 扩展文档
   </label>
   
     <div class="md-nav__source">
@@ -240,7 +239,7 @@
   
 
 
-  <a href="https://github.com/facelessuser/pymdown-extensions/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/wohugb/pymdown-extensions/" title="前往 Github 仓库" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -263,8 +262,8 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="PyMdown Extensions" class="md-nav__link">
-      PyMdown Extensions
+    <a href=".." title="简介" class="md-nav__link">
+      简介
     </a>
   </li>
 
@@ -275,8 +274,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../installation/" title="Installation" class="md-nav__link">
-      Installation
+    <a href="../installation/" title="安装" class="md-nav__link">
+      安装
     </a>
   </li>
 
@@ -287,8 +286,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../usage_notes/" title="Usage Notes" class="md-nav__link">
-      Usage Notes
+    <a href="../usage_notes/" title="使用说明" class="md-nav__link">
+      使用说明
     </a>
   </li>
 
@@ -303,11 +302,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
-      Extensions
+      扩展
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
-        Extensions
+        扩展
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -318,8 +317,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/arithmatex/" title="Arithmatex" class="md-nav__link">
-      Arithmatex
+    <a href="../extensions/arithmatex/" title="Arithmatex(数学公式)" class="md-nav__link">
+      Arithmatex(数学公式)
     </a>
   </li>
 
@@ -330,8 +329,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/b64/" title="B64" class="md-nav__link">
-      B64
+    <a href="../extensions/b64/" title="B64(图片BASE64)" class="md-nav__link">
+      B64(图片BASE64)
     </a>
   </li>
 
@@ -342,8 +341,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/betterem/" title="BetterEm" class="md-nav__link">
-      BetterEm
+    <a href="../extensions/betterem/" title="BetterEm(加粗斜体增强)" class="md-nav__link">
+      BetterEm(加粗斜体增强)
     </a>
   </li>
 
@@ -354,8 +353,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/caret/" title="Caret" class="md-nav__link">
-      Caret
+    <a href="../extensions/caret/" title="Caret(上标)" class="md-nav__link">
+      Caret(上标)
     </a>
   </li>
 
@@ -366,8 +365,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/critic/" title="Critic" class="md-nav__link">
-      Critic
+    <a href="../extensions/critic/" title="Critic(评论家)" class="md-nav__link">
+      Critic(评论家)
     </a>
   </li>
 
@@ -378,8 +377,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/details/" title="Details" class="md-nav__link">
-      Details
+    <a href="../extensions/details/" title="Details(细节)" class="md-nav__link">
+      Details(细节)
     </a>
   </li>
 
@@ -390,8 +389,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/emoji/" title="Emoji" class="md-nav__link">
-      Emoji
+    <a href="../extensions/emoji/" title="Emoji(表情)" class="md-nav__link">
+      Emoji(表情)
     </a>
   </li>
 
@@ -402,8 +401,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/escapeall/" title="EscapeAll" class="md-nav__link">
-      EscapeAll
+    <a href="../extensions/escapeall/" title="EscapeAll(转义)" class="md-nav__link">
+      EscapeAll(转义)
     </a>
   </li>
 
@@ -414,8 +413,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/extra/" title="Extra" class="md-nav__link">
-      Extra
+    <a href="../extensions/extra/" title="Extra(扩展)" class="md-nav__link">
+      Extra(扩展)
     </a>
   </li>
 
@@ -426,8 +425,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/extrarawhtml/" title="ExtraRawHTML" class="md-nav__link">
-      ExtraRawHTML
+    <a href="../extensions/extrarawhtml/" title="ExtraRawHTML(html)" class="md-nav__link">
+      ExtraRawHTML(html)
     </a>
   </li>
 
@@ -450,8 +449,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/highlight/" title="Highlight" class="md-nav__link">
-      Highlight
+    <a href="../extensions/highlight/" title="Highlight(高亮)" class="md-nav__link">
+      Highlight(高亮)
     </a>
   </li>
 
@@ -462,8 +461,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/inlinehilite/" title="InlineHilite" class="md-nav__link">
-      InlineHilite
+    <a href="../extensions/inlinehilite/" title="InlineHilite(行内高亮)" class="md-nav__link">
+      InlineHilite(行内高亮)
     </a>
   </li>
 
@@ -474,8 +473,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/keys/" title="Keys" class="md-nav__link">
-      Keys
+    <a href="../extensions/keys/" title="Keys(按键)" class="md-nav__link">
+      Keys(按键)
     </a>
   </li>
 
@@ -486,8 +485,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/magiclink/" title="MagicLink" class="md-nav__link">
-      MagicLink
+    <a href="../extensions/magiclink/" title="MagicLink(魔术链接)" class="md-nav__link">
+      MagicLink(魔术链接)
     </a>
   </li>
 
@@ -498,8 +497,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/mark/" title="Mark" class="md-nav__link">
-      Mark
+    <a href="../extensions/mark/" title="Mark(做记号)" class="md-nav__link">
+      Mark(做记号)
     </a>
   </li>
 
@@ -510,8 +509,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/pathconverter/" title="PathConverter" class="md-nav__link">
-      PathConverter
+    <a href="../extensions/pathconverter/" title="PathConverter(路径转换)" class="md-nav__link">
+      PathConverter(路径转换)
     </a>
   </li>
 
@@ -522,8 +521,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/striphtml/" title="StripHTML" class="md-nav__link">
-      StripHTML
+    <a href="../extensions/striphtml/" title="StripHTML(转义html)" class="md-nav__link">
+      StripHTML(转义html)
     </a>
   </li>
 
@@ -534,8 +533,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/progressbar/" title="ProgressBar" class="md-nav__link">
-      ProgressBar
+    <a href="../extensions/progressbar/" title="ProgressBar(进度条)" class="md-nav__link">
+      ProgressBar(进度条)
     </a>
   </li>
 
@@ -546,8 +545,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/smartsymbols/" title="SmartSymbols" class="md-nav__link">
-      SmartSymbols
+    <a href="../extensions/smartsymbols/" title="SmartSymbols(智能符号)" class="md-nav__link">
+      SmartSymbols(智能符号)
     </a>
   </li>
 
@@ -558,8 +557,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/snippets/" title="Snippets" class="md-nav__link">
-      Snippets
+    <a href="../extensions/snippets/" title="Snippets(片段)" class="md-nav__link">
+      Snippets(片段)
     </a>
   </li>
 
@@ -570,8 +569,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/superfences/" title="SuperFences" class="md-nav__link">
-      SuperFences
+    <a href="../extensions/superfences/" title="SuperFences(超级栅栏)" class="md-nav__link">
+      SuperFences(超级栅栏)
     </a>
   </li>
 
@@ -582,8 +581,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/tasklist/" title="Tasklist" class="md-nav__link">
-      Tasklist
+    <a href="../extensions/tasklist/" title="Tasklist(任务列表)" class="md-nav__link">
+      Tasklist(任务列表)
     </a>
   </li>
 
@@ -594,8 +593,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/tilde/" title="Tilde" class="md-nav__link">
-      Tilde
+    <a href="../extensions/tilde/" title="Tilde(波浪号)" class="md-nav__link">
+      Tilde(波浪号)
     </a>
   </li>
 
@@ -611,8 +610,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../miscellaneous_extras/" title="Miscellaneous Extras" class="md-nav__link">
-      Miscellaneous Extras
+    <a href="../miscellaneous_extras/" title="其他附加" class="md-nav__link">
+      其他附加
     </a>
   </li>
 
@@ -623,8 +622,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../contributing/" title="Contributing &amp; Support" class="md-nav__link">
-      Contributing &amp; Support
+    <a href="../contributing/" title="贡献 &amp; 支持" class="md-nav__link">
+      贡献 &amp; 支持
     </a>
   </li>
 
@@ -644,11 +643,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Development
+        发展
       </label>
     
-    <a href="./" title="Development" class="md-nav__link md-nav__link--active">
-      Development
+    <a href="./" title="发展" class="md-nav__link md-nav__link--active">
+      发展
     </a>
     
       
@@ -658,69 +657,69 @@
     
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
+    <label class="md-nav__title" for="toc">目录</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#project-layout" title="Project Layout" class="md-nav__link">
-    Project Layout
+  <a href="#项目布局" title="项目布局" class="md-nav__link">
+    项目布局
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#coding-standards" title="Coding Standards" class="md-nav__link">
-    Coding Standards
+  <a href="#编码标准" title="编码标准" class="md-nav__link">
+    编码标准
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#building-and-editing-documents" title="Building and Editing Documents" class="md-nav__link">
-    Building and Editing Documents
+  <a href="#建立和编辑文件" title="建立和编辑文件" class="md-nav__link">
+    建立和编辑文件
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#editing-document-theme" title="Editing Document Theme" class="md-nav__link">
-    Editing Document Theme
+  <a href="#编辑文档主题" title="编辑文档主题" class="md-nav__link">
+    编辑文档主题
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#spell-checking-documents" title="Spell Checking Documents" class="md-nav__link">
-    Spell Checking Documents
+  <a href="#拼写检查文件" title="拼写检查文件" class="md-nav__link">
+    拼写检查文件
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#validation-tests" title="Validation Tests" class="md-nav__link">
-    Validation Tests
+  <a href="#验证测试" title="验证测试" class="md-nav__link">
+    验证测试
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#syntax" title="Syntax" class="md-nav__link">
-    Syntax
+  <a href="#句法" title="句法" class="md-nav__link">
+    句法
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#targeted" title="Targeted" class="md-nav__link">
-    Targeted
+  <a href="#目标" title="目标" class="md-nav__link">
+    目标
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#running-validation-with-tox" title="Running Validation With Tox" class="md-nav__link">
-    Running Validation With Tox
+  <a href="#使用tox运行验证" title="使用Tox运行验证" class="md-nav__link">
+    使用Tox运行验证
   </a>
   
 </li>
@@ -731,15 +730,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#code-coverage" title="Code Coverage" class="md-nav__link">
-    Code Coverage
+  <a href="#代码覆盖率" title="代码覆盖率" class="md-nav__link">
+    代码覆盖率
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#generating-emoji-indexes" title="Generating Emoji Indexes" class="md-nav__link">
-    Generating Emoji Indexes
+  <a href="#在里面生成表情符号" title="在里面生成表情符号" class="md-nav__link">
+    在里面生成表情符号
   </a>
   
 </li>
@@ -759,8 +758,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../changelog/" title="Changelog" class="md-nav__link">
-      Changelog
+    <a href="../changelog/" title="更新日志" class="md-nav__link">
+      更新日志
     </a>
   </li>
 
@@ -771,8 +770,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../license/" title="License" class="md-nav__link">
-      License
+    <a href="../license/" title="许可" class="md-nav__link">
+      许可
     </a>
   </li>
 
@@ -794,69 +793,69 @@
     
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
+    <label class="md-nav__title" for="toc">目录</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#project-layout" title="Project Layout" class="md-nav__link">
-    Project Layout
+  <a href="#项目布局" title="项目布局" class="md-nav__link">
+    项目布局
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#coding-standards" title="Coding Standards" class="md-nav__link">
-    Coding Standards
+  <a href="#编码标准" title="编码标准" class="md-nav__link">
+    编码标准
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#building-and-editing-documents" title="Building and Editing Documents" class="md-nav__link">
-    Building and Editing Documents
+  <a href="#建立和编辑文件" title="建立和编辑文件" class="md-nav__link">
+    建立和编辑文件
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#editing-document-theme" title="Editing Document Theme" class="md-nav__link">
-    Editing Document Theme
+  <a href="#编辑文档主题" title="编辑文档主题" class="md-nav__link">
+    编辑文档主题
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#spell-checking-documents" title="Spell Checking Documents" class="md-nav__link">
-    Spell Checking Documents
+  <a href="#拼写检查文件" title="拼写检查文件" class="md-nav__link">
+    拼写检查文件
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#validation-tests" title="Validation Tests" class="md-nav__link">
-    Validation Tests
+  <a href="#验证测试" title="验证测试" class="md-nav__link">
+    验证测试
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#syntax" title="Syntax" class="md-nav__link">
-    Syntax
+  <a href="#句法" title="句法" class="md-nav__link">
+    句法
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#targeted" title="Targeted" class="md-nav__link">
-    Targeted
+  <a href="#目标" title="目标" class="md-nav__link">
+    目标
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#running-validation-with-tox" title="Running Validation With Tox" class="md-nav__link">
-    Running Validation With Tox
+  <a href="#使用tox运行验证" title="使用Tox运行验证" class="md-nav__link">
+    使用Tox运行验证
   </a>
   
 </li>
@@ -867,15 +866,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#code-coverage" title="Code Coverage" class="md-nav__link">
-    Code Coverage
+  <a href="#代码覆盖率" title="代码覆盖率" class="md-nav__link">
+    代码覆盖率
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#generating-emoji-indexes" title="Generating Emoji Indexes" class="md-nav__link">
-    Generating Emoji Indexes
+  <a href="#在里面生成表情符号" title="在里面生成表情符号" class="md-nav__link">
+    在里面生成表情符号
   </a>
   
 </li>
@@ -894,11 +893,11 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/facelessuser/pymdown-extensions/tree/master/docs/src/markdown/development.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/wohugb/pymdown-extensions/tree/master/docs/src/markdown/development.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="development">Development<a class="headerlink" href="#development" title="Permanent link"></a></h1>
-<h2 id="project-layout">Project Layout<a class="headerlink" href="#project-layout" title="Permanent link"></a></h2>
+                <h1 id="发展">发展<a class="headerlink" href="#发展" title="Permanent link"></a></h1>
+<h2 id="项目布局">项目布局<a class="headerlink" href="#项目布局" title="Permanent link"></a></h2>
 <p>There are a number of files for build, test, and continuous integration in the root of the project, but in general, the project is broken up like so.</p>
 <div class="codehilite"><pre><span></span>├── docs
 ├── pymdownx
@@ -937,7 +936,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="coding-standards">Coding Standards<a class="headerlink" href="#coding-standards" title="Permanent link"></a></h2>
+<h2 id="编码标准">编码标准<a class="headerlink" href="#编码标准" title="Permanent link"></a></h2>
 <p>When writing code, the code should roughly conform to PEP8 and PEP257 suggestions.  The PyMdown Extensions project utilizes the Flake8 linter (with some additional plugins) to ensure code conforms (give or take some of the rules).  When in doubt follow the formatting hints of existing code when adding or modifying files. existing files.  Listed below are the modules used:</p>
 <ul>
 <li><a class="magiclink magiclink-gitlab magiclink-repository" href="https://gitlab.com/pycqa/flake8" title="GitLab Repository: pycqa/flake8">pycqa/flake8</a></li>
@@ -950,7 +949,7 @@
 <div class="codehilite"><pre><span></span>flake8
 </pre></div>
 
-<h2 id="building-and-editing-documents">Building and Editing Documents<a class="headerlink" href="#building-and-editing-documents" title="Permanent link"></a></h2>
+<h2 id="建立和编辑文件">建立和编辑文件<a class="headerlink" href="#建立和编辑文件" title="Permanent link"></a></h2>
 <p>Documents are in Markdown (with with some additional syntax) and converted to HTML via Python Markdown and this extension bundle. If you would like to build and preview the documentation, you must have these packages installed:</p>
 <ul>
 <li><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/Python-Markdown/markdown" title="GitHub Repository: Python-Markdown/markdown">Python-Markdown/markdown</a>: the Markdown parser.</li>
@@ -962,7 +961,7 @@
 <div class="codehilite"><pre><span></span>mkdocs serve
 </pre></div>
 
-<h2 id="editing-document-theme">Editing Document Theme<a class="headerlink" href="#editing-document-theme" title="Permanent link"></a></h2>
+<h2 id="编辑文档主题">编辑文档主题<a class="headerlink" href="#编辑文档主题" title="Permanent link"></a></h2>
 <p>It isn't expected that people will need to mess with the theme, but if it is needed, a little additional work is required. The documents use the <a href="https://github.com/squidfunk/mkdocs-material">Material</a> theme for <a href="https://github.com/mkdocs/mkdocs">MkDocs</a> with some additional local tweaks and additions.  JavaScript additions are provided in <code>docs/src/js</code> and are in es2015 syntax and are converted to es5. Stylesheets are located at <code>docs/src/scss</code> and are written in SCSS, and are converted to CSS.  All conversions are done in a <code>Node.js</code> environment.  In order to get up and running, download and install <a href="https://yarnpkg.com/"><code>Yarn</code></a>. Also, install <a href="https://nodejs.org/en/"><code>Node.js</code></a> version 6+. From the root of the project, in a terminal, enter the command below.  This command will install all the needed <code>Node.js</code> modules.</p>
 <div class="codehilite"><pre><span></span>yarn install
 </pre></div>
@@ -996,18 +995,18 @@
 </table>
 <p>If you need to make changes to the <code>mkdocs.yml</code> file, do not update the one in project root directly, but update the one in <code>docs/src</code>. The build environment copies the one in <code>docs/src</code> to the project root and injects the revisioned script name(s) and stylesheet name(s).</p>
 <p>When serving via <code>yarn</code>, if you want to make sure that the local version of <code>pymdown-extensions</code> is used, you need to configure <code>yarn serve</code> to call with Python instead of calling the MkDocs binary: <code>yarn serve --mkdocs=&quot;python3 -m mkdocs&quot;</code>.  This is because if you are calling Python, it will look in the current working directory first for a given module when importing, but if you call the MkDocs binary, it will instead import the installed <code>pymdown-extensions</code>. Configuring the <code>--mkdocs</code> option is also useful if <code>mkdocs</code> is not in your path, or you want to call with a specific version of Python.</p>
-<h2 id="spell-checking-documents">Spell Checking Documents<a class="headerlink" href="#spell-checking-documents" title="Permanent link"></a></h2>
+<h2 id="拼写检查文件">拼写检查文件<a class="headerlink" href="#拼写检查文件" title="Permanent link"></a></h2>
 <p>During validation we build the docs and run a spell checker on them.  The spell checker script uses <a href="http://aspell.net/">Aspell</a>.  Currently this project uses the latest Aspell.  As the latest Aspell is not available on Windows, it is not expected that everyone will install and run Aspell locally.  In order to perform the spell check, it is expected you are setup to build the documents, and that you have Aspell installed in the your system path. To initiate the spell check run the following command from the root of the project:</p>
 <div class="codehilite"><pre><span></span>python tests/spelling.py
 </pre></div>
 
 <p>It should print out the files with the misspelled words if any are found.  If you find it prints words that are not misspelled, you can add them in <code>.dictionary</code> in the root of the project.</p>
-<h2 id="validation-tests">Validation Tests<a class="headerlink" href="#validation-tests" title="Permanent link"></a></h2>
+<h2 id="验证测试">验证测试<a class="headerlink" href="#验证测试" title="Permanent link"></a></h2>
 <p>In order to preserve good code health, a test suite has been put together with pytest (<a class="magiclink magiclink-github magiclink-repository" href="https://github.com/pytest-dev/pytest" title="GitHub Repository: pytest-dev/pytest">pytest-dev/pytest</a>). There are currently two kinds of tests: syntax and targeted.  To run these tests, you can use the following command:</p>
 <div class="codehilite"><pre><span></span>python run_tests.py
 </pre></div>
 
-<h3 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link"></a></h3>
+<h3 id="句法">句法<a class="headerlink" href="#句法" title="Permanent link"></a></h3>
 <p>Syntax tests are essentially text files containing Markdown. They are found under <code>tests/extensions</code>.  <code>test_syntax.py</code> scans all the files and converts the files to HTML with the extensions and options defined in <code>tests/extensions/tests.yml</code>.  They are then compared to the current stored HTML output.  If the two differ, the test fails.</p>
 <p>To run <strong>only</strong> these tests, from the root of the project run the following command:</p>
 <div class="codehilite"><pre><span></span>python run_tests.py --test-target syntax
@@ -1029,7 +1028,7 @@
 <div class="codehilite"><pre><span></span>python run_tests.py --update --file tests/extensions/arithmatex.txt
 </pre></div>
 
-<h3 id="targeted">Targeted<a class="headerlink" href="#targeted" title="Permanent link"></a></h3>
+<h3 id="目标">目标<a class="headerlink" href="#目标" title="Permanent link"></a></h3>
 <p>Targeted tests are unit tests that target specific areas in the code and exercises them to ensure proper functionality.  These tests are found in <code>test_targeted.py</code>.</p>
 <p>You can run <strong>only</strong> these tests from the root of the project with:</p>
 <div class="codehilite"><pre><span></span>python run_tests.py --test-target targeted
@@ -1039,7 +1038,7 @@
 <div class="codehilite"><pre><span></span>py.test tests/test_targeted.py
 </pre></div>
 
-<h3 id="running-validation-with-tox">Running Validation With Tox<a class="headerlink" href="#running-validation-with-tox" title="Permanent link"></a></h3>
+<h3 id="使用tox运行验证">使用Tox运行验证<a class="headerlink" href="#使用tox运行验证" title="Permanent link"></a></h3>
 <p>Tox (<a class="magiclink magiclink-github magiclink-repository" href="https://github.com/tox-dev/tox" title="GitHub Repository: tox-dev/tox">tox-dev/tox</a>) is a great way to run the validation tests, spelling checks, and linting in virtual environments so as not to mess with your current working environment. Tox will use the specified Python version for the given environment and create a virtual environment and install all the needed requirements (minus Aspell).  You could also setup your own virtual environments with the Virtualenv module without Tox, and manually do the same.</p>
 <p>First, you need to have Tox installed:</p>
 <div class="codehilite"><pre><span></span>pip install tox
@@ -1062,14 +1061,14 @@
 <div class="codehilite"><pre><span></span>tox -edocuments
 </pre></div>
 
-<h2 id="code-coverage">Code Coverage<a class="headerlink" href="#code-coverage" title="Permanent link"></a></h2>
+<h2 id="代码覆盖率">代码覆盖率<a class="headerlink" href="#代码覆盖率" title="Permanent link"></a></h2>
 <p>When running the validation tests through Tox, it is setup to track code coverage via the Coverage (<a class="magiclink magiclink-bitbucket magiclink-repository" href="https://bitbucket.org/ned/coveragepy" title="Bitbucket Repository: ned/coveragepy">ned/coveragepy</a>) module.  Coverage is run on each <code>pyxx-unittests</code> environment.  If you've made changes to the code, you can clear the old coverage data:</p>
 <div class="codehilite"><pre><span></span>coverage erase
 </pre></div>
 
 <p>Then run each unit test environment to and coverage will be calculated. All the data from each run is merged together.  HTML is output for each file in <code>.tox/pyXX-unittests/tmp</code>.  You can use these to see areas that are not covered/exercised yet with testing.</p>
 <p>You can checkout <code>tox.ini</code> to see how this is accomplished.</p>
-<h2 id="generating-emoji-indexes">Generating Emoji Indexes<a class="headerlink" href="#generating-emoji-indexes" title="Permanent link"></a></h2>
+<h2 id="在里面生成表情符号">在里面生成表情符号<a class="headerlink" href="#在里面生成表情符号" title="Permanent link"></a></h2>
 <p>The Emoji extension has emoji indexes generated from the source of Gemoji, EmojiOne, and Twemoji.  Below is the process for auto-generating these indexes.  In the case of Twemoji, it will also reference EmojiOne's short name index, so you may need to do both EmojiOne and Twemoji if the support is not satisfactory.</p>
 <ol>
 <li>Ensure you have Requests (<a class="magiclink magiclink-github magiclink-repository" href="https://github.com/requests/requests" title="GitHub Repository: requests/requests">requests/requests</a>) installed: <code>pip install requests</code>.</li>
@@ -1098,28 +1097,28 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../contributing/" title="Contributing &amp; Support" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../contributing/" title="贡献 &amp; 支持" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
-                  Previous
+                  后退
                 </span>
-                Contributing &amp; Support
+                贡献 &amp; 支持
               </span>
             </div>
           </a>
         
         
-          <a href="../changelog/" title="Changelog" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../changelog/" title="更新日志" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
-                  Next
+                  前进
                 </span>
-                Changelog
+                更新日志
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1135,8 +1134,8 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2014 - 2017 <a href="https://github.com/facelessuser">Isaac Muse</a>
-<br><span class="md-footer-custom-text">emoji provided free by </span><a href="http://www.emojione.com">EmojiOne</a>
+            版权 &copy; 2014 - 2018 <a href="https://github.com/facelessuser">艾萨克·穆</a>
+<br><span class="md-footer-custom-text">表情符号免费提供</span><a href="http://www.emojione.com">EmojiOne</a>
 
           </div>
         
@@ -1152,7 +1151,15 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-      <a href="https://github.com/facelessuser" class="md-footer-social__link fa fa-github"></a>
+      <a href="https://github.com/wohugb/pymdown-extensions" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="http://wohugb.github.io" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/wohugb" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/wohugb" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/wohugb" class="md-footer-social__link fa fa-linkedin"></a>
     
   </div>
 
@@ -1163,7 +1170,22 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.ce2ab4bf.js"></script>
+      <script src="../assets/javascripts/application.6cdc17f0.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              <script src="../assets/javascripts/lunr/lunr.jp.js"></script>
+            
+          
+          
+        
       
       <script>app.initialize({version:"0.17.2",url:{base:".."}})</script>
       
