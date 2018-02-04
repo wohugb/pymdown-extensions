@@ -8,7 +8,7 @@
 
 # PyMdown 扩展
 
-[Python Markdown]的扩展(https://pythonhosted.org/Markdown/).
+[Python Markdown](https://pythonhosted.org/Markdown/)的扩展.
 
 本叉是文档翻译版本
 
