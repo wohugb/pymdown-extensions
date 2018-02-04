@@ -1,72 +1,95 @@
 # SuperFences
 
-## Overview
+## 概观
 
-SuperFences provides three features:
+SuperFences提供了三个功能:
 
-1. The ability to [nest fences](#nested-fence-format) under blockquotes, lists, or other block elements (see [Limitations](#limitations) for more info).
-2. Ability to specify [custom fences](#custom-fences) to provide features like flowcharts, sequence diagrams, or other custom blocks.
-3. The ability to disable indented code blocks in favor of only using the fenced variant (off by default).
+1. 在blockquotes，列表或其他块元素下的[嵌套栅栏]（＃嵌套栅栏格式）的能力（更多信息参见[限制]（＃限制））。
+2. 能够指定[自定义栅栏]（＃自定义栅栏）以提供流程图，序列图或其他自定义块等功能。
+3. 能够指定[自定义栅栏]（＃自定义栅栏）以提供流程图，序列图或其他自定义块等功能。
 
-!!! danger "Reminder"
-    Remember to read the [Usage Notes](../usage_notes.md) for information that may be relevant when using this extension!
+!!! danger "提醒"
+    请记住阅读[使用说明]（../ usage_notes.md），以获取使用此扩展名时可能相关的信息！
 
-## Nested Fence Format
+## 嵌套篱笆格式
 
-1. Start and end fence boundaries are specified with either 3 or more backticks or tildes.
-
-2. Start and end fence boundaries must both use matching symbols (backticks or tildes) and must be of the same number of symbols.  If start is 3 backticks, the fence will end with 3 backticks.
-
-3. Start and end fence boundaries must be aligned to the same indentation level.
-
-4. Content between fences must be indented at least the same amount as the start and end boundaries.  Empty lines are exempted.
-
-5. If you are using a fenced block inside a blockquote, at the very least, the first line of the fenced block needs to have the appropriate number of `>` characters signifying the quote depth.
+1. 开始和结束围栏边界用3个或更多反引号或波浪线指定。
+2. 开始和结束围栏边界都必须使用匹配的符号（反引号或波浪形），并且必须具有相同数量的符号。,如果开始是3反引号，围栏将以3反引号结束。
+3. 开始和结束围栏边界必须对齐到相同的缩进级别。
+4. 围栏之间的内容必须缩进至少与开始和结束边界相同的数量。,空行被豁免。
+5. 如果你在一个blockquote中使用围栏，至少围栏的第一行需要有适当数量的表示引号深度的字符。
 
     ````
     > ```
-      a fenced block
+      一个围栏
       ```
     ````
 
-6. Too many blank lines will cause a blockquote to terminate, so remember to use `>` markers accordingly if not marking every line.
+    > ```
+      一个围栏
+      ```
+
+
+6. 太多的空白行会导致一个blockquote终止，所以如果不标记每一行，请记住使用`>`标记。
 
     ````
     > ```
-      a fenced block
+      一个围栏
 
-    > with blank lines
+    > 与空白行
       ```
     ````
 
-7. If using a fenced block as the first line of a list, you will have to leave the first line blank, but remember that the list marker must be followed by a space.
+    > ```
+      一个围栏
 
+    > 与空白行
+      ```
+
+7. 如果使用防护块作为列表的第一行，则必须将第一行留空，但请记住，列表标记后面必须跟一个空格。
     ````
-    -<space>
+    - <space>
+        ```
+        一个围栏集团
+        ```
+
+    定义
+    : <space>
+        ```
+        a fenced block
+        ```
+    ````
+
+    - <space>
+        ```
+        一个围栏集团
+        ```
+
+    : <space>
         ```
         a fenced block
         ```
 
-    Definition
-    :<space>
-        ```
-        a fenced block
-        ```
+8. 被隔离的块应该由空行与其他块分开。
     ````
-
-8. Fenced blocks should be separated from other blocks by an empty line.
-
-    ````
-    Paragraph.
+    段.
 
     ```
-    a fenced block
+    一个围栏
     ```
 
-    Another paragraph.
+    另一段。
     ````
 
-## Code Highlighting
+    段.
+
+    ```
+    一个围栏
+    ```
+
+    另一段。
+
+## 代码高亮
 
 Assuming Pygments is installed, code highlighting will be handled by [Pygments][pygments] by default. If Pygments is not installed, or disabled, code blocks will be created using HTML5 style tags for a JavaScript syntax highlighter: `#!html <pre class="highlight"><code class="language-mylanguage"></code></pre>`. If you disable `highlight_code`, specified languages will be ignored, and the content will be wrapped in a simple `pre` and `code` tags with no classes.
 
@@ -86,7 +109,7 @@ When using fenced code blocks, you can specify a specific syntax language to hig
     import foo.bar
     ```
 
-## Showing Line Numbers
+## 显示行号码
 
 Line numbers are provided via Pygments and can either be shown per code block or globally for all. To show globally via CodeHilite or `pymdownx.highlight`, you must set `linenums` to `#!py3 True` in the respective extension.
 
@@ -150,7 +173,7 @@ To set every other line as special, you must set the third `linenums` option (sp
 
 For JavaScript libraries, a class of `linenums` is written to the block.  This may or may not be leveraged by your chosen highlighter.  It is uncertain at this time whether line number support for JavaScript highlighters will be enhanced beyond this.
 
-## Highlighting Lines
+## 突出显示线条
 
 Via Pygments, certain lines can be specified for highlighting.  This is done by specifying a special setting directly after the opening tokens (and language if present).  The setting is named `hl_lines` and the value should be the targeted line numbers separated by spaces.
 
@@ -192,7 +215,7 @@ Line numbers are always referenced starting at 1 ignoring what the line number i
     import foo.bar.baz
     ```
 
-## Custom Fences
+## 自定义栅栏
 
 SuperFences allows defining custom fences for special purposes, like flow charts and sequence diagrams:
 
@@ -265,7 +288,7 @@ Format\ Function                | Description
 `superfences.fence_code_format` | Places the HTML escaped content of the fence under a `#!html <pre><code>` block.
 `superfences.fence_div_format`  | Places the HTML escaped content of the fence under a `#!html <div>` block.
 
-## UML Diagram Example
+## UML图示例
 
 This example illustrates how this document uses the `custom_fences` option to do UML diagrams.  Out of the box, SuperFences use the default settings for `custom_fences` for the purpose of including UML. The settings below show the default settings, which define two new custom languages called `flow` and `sequence`. The `flow` and `sequence` fences will pass the content through the `superfences.fence_code_format` format function which will wrap the content in `#!html <pre><code` blocks and attach the class `uml-flowchart` or `uml-sequence-diagram` to the respective `#!html <pre>` block. `superfences.fence_div_format` could just as easily be used to wrap the content in a `#!html <div>` instead, or a new custom function could have been written and used.
 
@@ -281,12 +304,12 @@ As defined above, the custom UML diagrams are recognized when defining a fenced 
 The JavaScript libraries used to render UML in this document are [flowchart.js][flowchart-js] and [sequence-diagram.js][sequence-diagram-js]. This extension does not provide these JavaScript libraries; you must provide the necessary JavaScript files for your custom fences yourself. If you wish to follow along with this example to enable UML, see the requirements below.
 
 flowcharts
-: 
+:
     - [raphael.js][raphael-js]
     - [flowchart.js][flowchart-js]
 
 sequence diagrams
-: 
+:
     Minimum requirements for the latest version available via CDN (at the time of writing this).
 
     - [raphael.js][raphael-js]
@@ -409,7 +432,7 @@ var uml = (function (converter, className, settings) {
 }());
 ```
 
-## Limitations
+## 限制
 
 This extension suffers from the same issues that the original fenced block extension suffers from.  Normally Python Markdown does not parse content inside HTML tags unless they are marked with the attribute `markdown='1'`.  But since this is run as a preprocessor, it is not aware of the HTML blocks.
 
@@ -419,7 +442,7 @@ SuperFences works best when following the guidelines.  If the guidelines are not
 
 For the reasons above, the nested fences feature really is just a workaround.  But for a lot of people, this functionality is more than sufficient.
 
-## Options
+## 选项
 
 Option                         | Type   | Default      | Description
 ------------------------------ | ------ | ------------ | -----------

@@ -49,7 +49,7 @@
         }
         ```
 
-## Overview
+## 概观
 
 The GitHub extension is a convenience extension to load up and configure the minimum extensions needed to get a GFM feel.  It is not a 1:1 emulation, but some aspects are pretty close.  There is no desire to make it exact, but the feel is nice if you like GFM feel.
 
@@ -71,7 +71,7 @@ Extension                       | Options                                       
 [SuperFences](./superfences.md) |                                                               | `pymdownx.superfences`
 
 
-## Code Highlighting
+## 代码高亮
 
 Code highlighting is usually done via Pygments by including either the `pymdownx.highlight` or `markdown.extensions.codehilite` extension and ensuring the following option is set if not by default: `guess_lang=False`. Optionally, you can use either of these extensions and disable Pygments support to use your preferred JavaScript highlighter.
 
@@ -85,7 +85,7 @@ The default slugify that Python Markdown uses isn't very much like GitHub's as i
 
 As mentioned before, the GitHub extension does not intend to provide a 1:1 match of GFM. There is one small known difference that may never be directly addressed. GitHub appends a number to duplicate headers with a hyphen: `-1`. Python Markdown (through the Toc extension) appends a number to duplicate headers with an underscore `_1`. Unfortunately, a slug function cannot simply override this duplicate as that behavior is controlled within the Toc extension. There are no plans at this time to write a Toc extension to replace the default one as a 1:1 match in behavior is not the end goal.
 
-## GitHub Emoji Configuration
+## GitHub Emoji 配置
 
 This is for informational purposes in case you wish to configure GitHub style emoji outside of the GitHub Extension. This is the full, default setup used to get GitHub emoji images.  This is valid at the time of writing this. GitHub uses Gemoji to provide their emoji, but GitHub also constantly tweaks how they do things, so in time this may render differently than what they actually do. This should provide emoji for as long as the CDNs are valid.
 
@@ -110,7 +110,7 @@ extension_configs = {
 }
 ```
 
-## Options
+## 选项
 
 If you wish to configure the individual extensions included via this extensions, you can configure them by placing that sub extension's settings under a setting value that equals the sub extensions name.
 

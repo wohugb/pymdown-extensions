@@ -1,31 +1,49 @@
-# Miscellaneous Extras
+# 其他附加
 
-## Alternate Slugify
+## 备用的Slugify
 
-Python Markdown's default slugify strips out all Unicode chars. To better handle Unicode, a couple of optional slugify options have been provided. These are very simple slugify options. There are many slugify options out there, some of which are very sophisticated. Some may prefer using one of those, but if you just want something simple, these might fill that requirement.
+Python的Markdown的默认slugify去掉所有的Unicode字符。
+为了更好地处理Unicode，已经提供了几个可选的slugify选项。
+这些是非常简单的slugify选项。
+有很多slugify选项，其中一些是非常复杂的。
+有些人可能更喜欢使用其中的一种，但是如果你只是想要一些简单的东西，可能会满足这个要求。
 
 ### `uslugify`
 
-In order to handle Unicode characters in slugs better, a slugify has been included at `pymdownx.slugs.uslugify`. This assumes you are encoding your HTML as UTF-8.  UTF-8 Unicode should be okay in your slugs in modern browsers. `uslugify` and normalizes the Unicode with the [`NFC`][unicode-norm] form, and then strips out non-word Unicode characters (`-` is allowed to pass through as well). Spaces are replaced with the provided separator.  Lastly, the entire string is lowercased. You can override Toc's default slugify by feeding in this function via the `slugify` parameter.
+为了更好地处理slu Unicode中的Unicode字符，在pymdownx.slugs.uslugify处包含slugify。
+这假定您将您的HTML编码为UTF-8。
+在现代浏览器中，UTF-8 Unicode应该可以。
+`uslugify`并使用[`NFC`][unicode-norm]形式对Unicode进行规范化，然后去除非单字Unicode字符(`-`也可以通过)。
+空格被提供的分隔符替换。
+最后，整个字符串是小写的。
+你可以通过`slugify`参数提交这个函数来重写Toc的默认slugify。
 
 ### `uslugify_encoded`
 
-If you aren't encoding your HTML as UTF-8, or prefer the safer percent encoded Unicode slugs, you can use `pymdownx.slugs.uslugify_encoded`. This is just like [`uslugify`](#uslugify) except that it percent encodes Unicode characters. You can override Toc's default slugify by feeding in this function via the `slugify` parameter.
+如果你没有将你的HTML编码为UTF-8，或者更喜欢更安全的百分比编码Unicode段落，你可以使用`pymdownx.slugs.uslugify_encoded`。
+这就像[uslugify](＃uslugify)，只是它编码Unicode字符。
+你可以通过`slugify`参数提交这个函数来重写Toc的默认slugify。
 
 ### `uslugify_cased`
 
-If you prefer to keep the casing of your Unicode slugs, this might be the slug for you. This is just like [`uslugify`](#uslugify) except that it preserves the case of the original text. You can override Toc's default slugify by feeding in this function via the `slugify` parameter.
+如果你喜欢保留你的Unicode slu casing的外壳，这可能是你的slu g。
+这就像[uslugify](＃uslugify)，只是它保留了原始文本的情况。
+你可以通过`slugify`参数提交这个函数来重写Toc的默认slugify。
 
 ### `uslugify_cased_encoded`
 
-If you aren't encoding your HTML as UTF-8, or prefer the safer percent encoded Unicode slugs *and* you prefer to keep the casing of your Unicode slugs, you can use `pymdownx.slugs.uslugify_cased_encoded`. This is just like [`uslugify`](#uslugify) except that it percent encodes Unicode characters *and* it preserves the case of the original text. You can override Toc's default slugify by feeding in this function via the `slugify` parameter.
+如果你没有将你的HTML编码为UTF-8，或者更喜欢更安全的百分比编码的Unicode slugs *和*你更喜欢保留你的Unicode字符串，你可以使用`pymdownx.slugs.uslugify_cased_encoded`。
+这就像[uslugify](＃uslugify)，只是它编码Unicode字符*和*它保留原始文本的情况。
+你可以通过`slugify`参数提交这个函数来重写Toc的默认slugify。
 
 ### `gfm`
 
-If you are looking for a GitHub like slug, this may be for you. This is just like [`uslugify`](#uslugify) except that ASCII chars are lowercased while Unicode chars are not.
+如果你正在寻找像slu G一样的GitHub，这可能适合你。
+这就像[uslugify](＃uslugify)，除了ASCII字符是小写字母而Unicode字符不是。
 
 ### `gfm_encoded`
 
-If you are looking for a GitHub like slug, this may be for you. This is just like [`uslugify`](#uslugify) except that it percent encodes Unicode characters and ASCII chars are lowercased while Unicode chars are not.
+如果你正在寻找像slu G一样的GitHub，这可能适合你。
+这就像[uslugify](＃uslugify)，除了百分比编码Unicode字符和ASCII字符小写，而Unicode字符不是。
 
 --8<-- "refs.md"

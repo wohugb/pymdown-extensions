@@ -1,6 +1,6 @@
 # Tasklist
 
-## Overview
+## 概观
 
 The Tasklist extension adds GFM style task lists.  They follow the same syntax as GFM. Simply start each list item with a square bracket pair containing either a space (an unchecked item) or a `x` (a checked item).
 
@@ -139,7 +139,7 @@ Classes               | Description
     }
     ```
 
-## Options
+## 选项
 
 Option            | Type | Default      | Description
 ----------------- | ---- | ------------ | ------------

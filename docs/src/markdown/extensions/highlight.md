@@ -1,6 +1,6 @@
 # Highlight
 
-## Overview
+## 概观
 
 Highlight is an extension that adds support for code highlighting. Its purpose is to provide a single place to configure syntax highlighting for code blocks. Both [InlineHilite](./inlinehilite.md) and [SuperFences](./superfences.md) can use Highlight to configure their highlight settings, but highlight will also run all non-fence code blocks through the highlighter as well.
 
@@ -8,15 +8,15 @@ The Highlight extension is inspired by [CodeHilite][codehilite], but differs in 
 
 As previously mentioned, both InlineHilite's and SuperFences' highlighting can be controlled by Highlight. Both can use [Pygments][pygments] or JavaScript highlighters to do their code syntax highlighting, but all of the settings here only affect highlighting via Pygments except `use_pygments` and `css_class`.  If you want to use a JavaScript syntax highlighter, set `use_pygments` to `#!py3 False` or make sure you don't have Pygments installed.
 
-## Syntax Highlighting
+## 语法高亮
 
-If Pygments is installed, it will be the default syntax highlighter, but if it is not, or if `use_pygments` is turned off, code tags will be rendered in the HTML5 format for JavaScript highlighting: 
+If Pygments is installed, it will be the default syntax highlighter, but if it is not, or if `use_pygments` is turned off, code tags will be rendered in the HTML5 format for JavaScript highlighting:
 
 ```html
 <pre class="highlight"><code class="language-mylanguage"></code></pre>
 ```
 
-## Extended Pygments Lexer Options
+## 扩展Pygments Lexer选项
 
 If using Pygments, some lexers have special options.  For instance, the `php` lexer has the option `startinline` which, if enabled, will parse PHP syntax without requiring `#!php <?` at the beginning.  InlineHilite takes the approach of allowing you to create a special Pygments language with options.  So if you wanted to enable `startinline` for `php`, you might create a language name called `php-inline` that maps to `php` with `startinline` enabled.  This is done via the `extend_pygments_lang` option.
 
@@ -42,12 +42,12 @@ If using Pygments, some lexers have special options.  For instance, the `php` le
 
     `#!php-inline $a = array("foo" => 0, "bar" => 1);`
 
-## Options
+## 选项
 
 Option                    | Type   | Default                   | Description
 ------------------------- | ------ | ------------------------- | -----------
 `css_class`               | string | `#!py3 'highlight`         | Default class to apply to the wrapper element on code blocks. Other extensions can override this.
-`guess_lang`              | bool   | `#!py3 False`              | Guess what syntax language should be used if no language is specified. 
+`guess_lang`              | bool   | `#!py3 False`              | Guess what syntax language should be used if no language is specified.
 `pygments_style`          | string | `#!py3thon 'default'`      | Set the Pygments' style to use.  This really only has an effect when used with `noclasses`.
 `noclasses`               | bool   | `#!py3 False`              | This will cause the styles to directly be written to the tag's style attribute instead of requiring a stylesheet.
 `use_pygments`            | bool   | `#!py3 True`               | Controls whether Pygments (if available) is used to style the code, or if the code will just be escaped and prepped for a JavaScript syntax highlighter.

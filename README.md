@@ -5,14 +5,20 @@
 [![Requirements Status][requires-image]][requires-link]
 [![pypi-version][pypi-image]][pypi-link]
 ![License][license-image-mit]
-# PyMdown Extensions
-Extensions for [Python Markdown](https://pythonhosted.org/Markdown/).
 
-# Documentation
-Extension documentation is found here: http://facelessuser.github.io/pymdown-extensions/.
+# PyMdown 扩展
 
-# License
-License is MIT except for a few exceptions.  See [LICENSE](https://github.com/facelessuser/pymdown-extensions/blob/master/LICENSE.md) for more info.
+[Python Markdown]的扩展(https://pythonhosted.org/Markdown/).
+
+本叉是文档翻译版本
+
+## 文档
+
+扩展文档在这里找到： http://facelessuser.github.io/pymdown-extensions/.
+
+## 执照
+
+许可证是麻省理工学院除少数例外。  请参阅[许可证](https://github.com/facelessuser/pymdown-extensions/blob/master/LICENSE.md) for more info.
 
 [codecov-image]: https://img.shields.io/codecov/c/github/facelessuser/pymdown-extensions/master.svg
 [codecov-link]: https://codecov.io/github/facelessuser/pymdown-extensions

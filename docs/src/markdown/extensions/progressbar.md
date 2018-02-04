@@ -1,6 +1,6 @@
 # ProgressBar
 
-## Overview
+## 概观
 
 ProgressBar is an extension that adds support for progress/status bars.  It can take percentages or fractions, and it can optionally generate classes for percentages at specific value levels.  It also works with Python Markdown's built in `attr_list` extension.
 
@@ -48,7 +48,7 @@ Though progress bars are rendered as block items, it accepts `attr_list`'s inlin
     [=85%]{: .thin}
     [=100%]{: .thin}
 
-## Styling with CSS
+## 使用CSS设计样式
 
 The general HTML structure of the progress bar is as follows:
 
@@ -136,7 +136,7 @@ Classes                  | Description
     }
     ```
 
-## Options
+## 选项
 
 Option               | Type    | Default      | Description
 -------------------- | ------- | ------------ |------------

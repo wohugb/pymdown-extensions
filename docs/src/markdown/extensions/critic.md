@@ -1,12 +1,12 @@
 # Critic
 
-## Overview
+## 概观
 
 Critic is an extension that adds handling and support of [Critic Markup][critic-markup] which uses a special syntax to represent edits to a Markdown document.  This extension runs before all other extensions to parse the critic edits.
 
 Critic allows you to automatically accept edits or reject the edits and render the output accordingly. It also allows for visually displaying the changes in HTML output ([mileage may vary](#limitations-with-previewing-critic-markup)).
 
-## Usage
+## 用法
 
 Critic Markup uses special markup to insert, delete, substitute, highlight, and comment.
 
@@ -18,7 +18,7 @@ You can also highlight specific text with `#!critic-markup {==highlight me==}`. 
 
     ```critic-markup
     Here is some {--*incorrect*--} Markdown.  I am adding this{++ here++}.  Here is some more {--text
-     that I am removing--}text.  And here is even more {++text that I 
+     that I am removing--}text.  And here is even more {++text that I
      am ++}adding.{~~
 
     ~>  ~~}Paragraph was deleted and replaced with some spaces.{~~  ~>
@@ -59,7 +59,7 @@ When previewing, you can style them to stand out (see [CSS](#css) for more infor
 
     ```critic-markup
     Here is some {--*incorrect*--} Markdown.  I am adding this{++ here++}.  Here is some more {--text
-     that I am removing--}text.  And here is even more {++text that I 
+     that I am removing--}text.  And here is even more {++text that I
      am ++}adding.{~~
 
     ~>  ~~}Paragraph was deleted and replaced with some spaces.{~~  ~>
@@ -94,7 +94,7 @@ When previewing, you can style them to stand out (see [CSS](#css) for more infor
 
     --8<-- "critic-preview-example.md"
 
-## Limitations with Previewing Critic Markup
+## 预览评论标记的局限性
 
 Parsing CriticMarkup is very straight forward.  If you need to reject critic marks or accept them, the Critic extension will work quite well.  But when trying to render the edits visually **and** trying to convert the document to HTML, things can get ugly.  I think this is the one unfortunate problem with CriticMarkup.  The existence of the critic edits can alter the actual source.  Its a fantastic idea, but it should be understood that when using CriticMarkup beyond inline or block paragraphs, there is a possibility that invalid HTML will be created for the preview (especially in relation to lists or if breaking up Markdown syntax).  I think Fletcher said it best here: http://fletcher.github.io/MultiMarkdown-4/criticmarkup.
 
@@ -228,11 +228,10 @@ Classes   | Description
     }
     ```
 
-## Options
+## 选项
 
 Option    | Type   | Default     | Description
 --------- |------- | ----------- | -----------
-`mode`    | string | `#!py3 view` | `view` just parses the markup and displays it in its HTML equivalent rendering.  `accept` strips out the critic markup and replaces them with the suggested changes.  `reject` rejects all the suggestions and strips the critic markup out replacing it with the original.
-
+`mode`    | string | `#!py3 view` | `view`只是解析标记并将其显示在与HTML等效的呈现中。  `accept` 删除批评标记，并用建议的更改替换它们.  `reject` 拒绝所有的建议，并将评论标记替换为原文。
 
 --8<-- "links.md"

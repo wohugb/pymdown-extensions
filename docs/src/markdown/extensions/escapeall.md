@@ -1,10 +1,14 @@
 # EscapeAll
 
-## Overview
+## 概观
 
-If you ever have to stop and try to remember, *Can I escape this char?* or *Will backslash escape this?*, you are not alone.  EscapeAll makes `\` escape everything making such questions moot.  Now instead of questioning or looking up what can be escaped, you can expect that `\` will escape the character following it.  So if you need a literal `\`, just escape it: `\\`.  Keep in mind this will not escape things in code blocks of any kind.
+如果你不得不停下来试着记住，*我可以逃避这个字符吗？*或者*反斜杠是否会逃避这个？*，你并不孤单。
+EscapeAll让`\`逃脱了所有这些问题。
+现在，不要质疑或查找可以被转义的内容，而是可以期望`\`将转义后面的字符。
+所以，如果你需要一个字面的`\`，只需要转义：`\\`。
+请记住，这不会在任何类型的代码块中转义。
 
-!!! example "Escape Example"
+!!! example "转义示例"
 
     ```
     \W\e\ \c\a\n\ \e\s\c\a\p\e
@@ -13,30 +17,30 @@ If you ever have to stop and try to remember, *Can I escape this char?* or *Will
     ```
 
     \W\e\ \c\a\n\ \e\s\c\a\p\e
-    \e\v\e\r\y\t\h\i\n\g\!\ \
+    \e\v\e\r\y\t\h\i\n\g\!\ \`
     \❤\😄
 
-There are two special escapes among all of these escapes though: escaping "space" characters and escaping "newline" characters. If `nbsp` is enabled, an escaped space will be converted into a non-breaking space: `#!html &nbsp;`. If `hardbreak` is enabled, an escaped newline will be converted to a hard break `#!html <br>`. The advantage of `hardbreak` is that you can visually see the hard break opposed to Markdown's default method of two spaces at the end of a line.
+在这些转义中有两个特殊的转义：逃避“空格”字符和转义“换行”字符。,如果启用了`nbsp`，转义空间将被转换为一个不间断的空格：`#!html ＆nbsp;`。,如果`hardbreak`被启用，转义换行符将被转换为硬中断`#!html <br>`。 ,“hardbreak”的优点是，你可以直观地看到与Markdown的默认方法相反，在行尾有两个空格。
 
-So in short, EscapeAll escapes all inline characters.
+所以简而言之，EscapeAll会转义所有的内嵌字符。
 
 !!! question "Q & A"
 
-    **So all ASCII characters?**
+    **那么所有的ASCII字符？**
 
-    _It escapes everything._
+    _它逃脱了一切。_
 
-    **What about Unicode?**
+    **那么Unicode呢？**
 
-    _It escapes everything!_
+    _它逃脱了一切！_
 
-    **What about...**
+    **关于什么...**
 
-    _EVERYTHING! IT ESCAPES EVERYTHING!_
+    _一切！,它可以逃脱一切！_
 
-## Options
+## 选项
 
-Option      | Type | Default         | Description
------------ | ---- | --------------- | ----------
-`hardbreak` | bool | `#!py3 False`   | Escaped newlines will be hard breaks: `#!html <br>`.
-`nbsp`      | bool | `#!py3 False`   | Escaped spaces will be non-breaking spaces: `#!html &nbsp;`.
+| 选项        | 类型 | 类型          | 描述                                         |
+| ----------- | ---- | ------------- | -------------------------------------------- |
+| `hardbreak` | bool | `#!py3 False` | 转义的换行符将会是一个难题：`#!html <br>`。  |
+| `nbsp`      | bool | `#!py3 False` | 转义的空格将是不间断的空格：`#!html ＆nbsp;`。 |

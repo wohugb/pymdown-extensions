@@ -1,32 +1,41 @@
 # Extra
 
-## Overview
+## 概观
 
-Python Markdown has an `extra` extension that provides features similar to PHP Markdown Extra.  PyMdown Extensions aims to provide not only new features, but to improve behavior in Python Markdown's existing feature set.  Some of these things can be at odds.  Python Markdown's `smartstrong` and `fenced_code` are not compatible with PyMdown Extensions' `betterem` and `superfences`.  `smartstong` should never be loaded at the same time as `betterem`, and `superfences` should not be loaded at the same time as `fenced_code`.  Because of this, it is not possible to use Python Markdown's `extra` and PyMdown Extensions' `superfences` and `betterem`. To make this less frustrating, PyMdown Extensions provides it's own implementation of `extra`.
+Python Markdown有一个额外的扩展，提供类似于PHP Markdown Extra的功能。
+PyMdown扩展旨在提供不仅新功能，而且改善Python Markdown现有功能集中的行为。
+其中一些事情可能不一致。
 
-PyMdown Extensions' `extra` is just like Python Markdown's extra except `smartstrong` is replaced by `betterem` and `fenced_code` is replaced by `superfences`.  All other features and extensions should be identical because we are using the same ones.
+Python Markdown的`smartstrong`和`fenced_code`不兼容PyMdown扩展的`betterem`和`superfences`。
+,`smartstong`不应该与`betterem`同时加载，`superfences`不应该与`fenced_code`同时加载
 
-This extension is a convenience extension, and it currently provides no other additional features.  But remember **don't use `pymdownx.extra` while also using `markdown.extensions.extra`**!
+因此，使用Python Markdown的`extra`和PyMdown Extensions `superfences`和`betterem`是不可能的,为了减少这个问题，PyMdown扩展提供了自己的`extra`实现。
 
-!!! danger "Reminder"
-    Remember to read the [Usage Notes](../usage_notes.md) for information that may be relevant when using this extension!
+PyMdown扩展`extra`就像Python Markdown的额外功能，除了`smartstrong`被`betterem`替代，`fenced_code`被`superfences`替代。
+所有其他功能和扩展应该是相同的，因为我们使用相同的。
 
-Extensions:
+这个扩展是一个方便的扩展，它目前不提供其他附加功能。
+But remember **don't use `pymdownx.extra` while also using `markdown.extensions.extra`**!
 
-Extension                          | Name
----------------------------------- |--------
-[BetterEm](./betterem.md)          | `pymdownx.betterem`
-[SuperFences](./superfences.md)    | `pymdownx.superfences`
-[Footnotes][footnotes]             | `markdown.extensions.footnotes`
-[Attribute Lists][attr-list]       | `markdown.extensions.attr_list`
-[Definition Lists][def-list]       | `markdown.extensions.def_list`
-[Tables][tables]                   | `markdown.extensions.tables`
-[Abbreviations][abbreviations]     | `markdown.extensions.abbr`
-[ExtraRawHTML](./extrarawhtml.md)  | `pymdownx.extrarawhtml`
+!!! danger "提醒"
+    请记住阅读[使用说明](../usage_notes.md)，以获取使用此扩展名时可能相关的信息！
 
-## Options
+扩展:
 
-If you wish to configure the individual extensions included via this extensions, you can configure them by placing that sub extension's settings under a setting value that equals the sub extensions name.
+| 扩展                              | 名称                            |
+| --------------------------------- | ------------------------------- |
+| [BetterEm](./betterem.md)         | `pymdownx.betterem`             |
+| [SuperFences](./superfences.md)   | `pymdownx.superfences`          |
+| [Footnotes][footnotes]            | `markdown.extensions.footnotes` |
+| [Attribute Lists][attr-list]      | `markdown.extensions.attr_list` |
+| [Definition Lists][def-list]      | `markdown.extensions.def_list`  |
+| [Tables][tables]                  | `markdown.extensions.tables`    |
+| [Abbreviations][abbreviations]    | `markdown.extensions.abbr`      |
+| [ExtraRawHTML](./extrarawhtml.md) | `pymdownx.extrarawhtml`         |
+
+## 选项
+
+如果您希望通过此扩展名配置各个扩展， 您可以通过将该子扩展的设置置于与子扩展名称相同的设置值下进行配置。
 
 ```py3
 extension_configs = {

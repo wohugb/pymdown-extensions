@@ -1,12 +1,15 @@
 # Mark
 
-## Overview
+## 概观
 
-Mark adds the ability to insert `#!html <mark></mark>` tags.  The syntax requires the text to be surrounded by double equal signs. It can optionally be configured to use smart logic. Syntax behavior for smart and non-smart variants of **mark** models that of [BetterEm](betterem.md#differences).
+Mark添加了插入`#!html <mark></ mark>`标签的功能。
+语法要求文本被双等号包围。
+它可以选择配置为使用智能逻辑。
+**标记**的智能和非智能变体的语法行为[BetterEm](betterem.md#differences).
 
-To Mark some text, simply surround the text with double `=`.
+要标记一些文本，只需用双`=`来包围文本即可。
 
-!!! example "Mark Example"
+!!! example "Mark 例"
 
     ```
     ==mark me==
@@ -18,8 +21,8 @@ To Mark some text, simply surround the text with double `=`.
 
     ==smart==mark==
 
-## Options
+## 选项
 
-Option       | Type | Default     | Description
------------- | ---- | ----------- |------------
-`smart_mark` | bool | `#!py3 True` | Use smart logic with mark characters.
+| 选项         | 类型 | 类型         | 描述                     |
+| ------------ | ---- | ------------ | ------------------------ |
+| `smart_mark` | bool | `#!py3 True` | 使用智能逻辑与标记字符。 |

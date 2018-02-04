@@ -1,16 +1,19 @@
-# Usage Notes
+# 使用说明
 
-## Incompatible Extensions
+## 不兼容的扩展
 
-PyMdown Extensions includes three extensions that are meant to **replace** their counterpart in the default Python Markdown extensions. You don't have to use all of PyMdown Extensions' extensions, but if you choose to use one of the packages below, you should use it instead of the Python Markdown one; **they cannot be loaded at the same time**.
+PyMdown扩展包括三个扩展，旨在**替换**默认Python Markdown扩展中的对应部分。
+您不必使用PyMdown扩展的所有扩展， 但如果您选择使用下面的一个包, 你应该使用它而不是Python的Markdown之一; **他们不能在同一时间加载**.
 
-Also, you shouldn't include an extension more than once. If you try to include more than one extension at the same time, you may get unexpected results.  Also, be aware of that some of the extensions are convenience extensions that include multiple extensions; be aware of what they include so you do not accidentally re-include them individually.
+另外，您不应该多次包含扩展名。
+如果您尝试同时包含多个扩展程序，则可能会收到意想不到的结果。
+此外，请注意，某些分机是包含多个分机的便利分机;请注意它们包含的内容，以免您不小心重新包含它们。
 
-- `pymdownx.superfences` replaces `markdown.extensions.fenced_code`.
+- `pymdownx.superfences` 取代 `markdown.extensions.fenced_code`.
 
-- `pymdownx.betterem` replaces `markdown.extensions.smartstrong`.
+- `pymdownx.betterem` 取代 `markdown.extensions.smartstrong`.
 
-- `pymdownx.extra` replaces `markdown.extensions.extra`, but remember, `pymdown.extra` is a convenience extension which is just a wrapper and includes a number of extensions. Remember to avoid including this and then including conflicting extensions or doubles of extensions.  Here is the full list of included extensions:
+- `pymdownx.extra` 取代 `markdown.extensions.extra`, 但要记住, `pymdown.extra`是一个方便的扩展，它只是一个包装，包含了许多扩展。请记住避免包括这个，然后包括冲突的扩展名或扩展名的双打。以下是包含的扩展的完整列表:
 
     ```
     'markdown.extensions.tables',
@@ -22,7 +25,7 @@ Also, you shouldn't include an extension more than once. If you try to include m
     'pymdownx.superfences'
     ```
 
-- `pymdownx.github` doesn't replace any extensions and is just a convenience extensions to include most of the extensions needed to get a GitHub-ish feel.  Remember to avoid including this and then including conflicting extensions or doubles of extensions.  Here is the full list of included extensions:
+- `pymdownx.github`不能代替任何扩展名，只是一个方便的扩展，包括获得GitHub-ish感觉所需的大部分扩展。请记住避免包括这个，然后包括冲突的扩展名或扩展名的双打。以下是包含的扩展的完整列表:
 
     ```
     'markdown.extensions.tables',

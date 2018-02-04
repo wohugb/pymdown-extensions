@@ -1,24 +1,40 @@
 # PathConverter
 
-## Overview
+## 概观
 
-PathConverter is an extension that can convert local, relative reference paths to absolute or relative paths for links and images. It was originally written for a project that wanted to preview the markdown by rendering it in a temporary location. This extension allowed the paths to be converted to work from the temporary location. This context is important when trying to understand why this extension was created. It's actual usage is limited to situations like this, so it isn't something that would get used in most normal scenarios.
+PathConverter是一个扩展，可以将本地，相对参考路径转换为链接和图像的绝对路径或相对路径。
+它最初是为一个项目编写的，该项目希望通过将其呈现在临时位置来预览降价。
+该扩展允许将路径转换为从临时位置开始工作。
+当试图理解为什么创建这个扩展时，这个上下文很重要。
+它的实际使用仅限于这样的情况，所以它不是在大多数正常情况下使用的东西。
 
-PathConverter takes an absolute base path. The base path is the Markdown content's assumed location at time of conversion.  The path is used as a reference for locating images and referenced files relative to the Markdown content.  Essentially, the references in the Markdown file would currently be relative to this base path at conversion time. The references existence is not verified, but the it is analyze to determine if it is a relative path, and if so, it is eligible for conversion. In the case of **absolute** mode, the relative Markdown references would be converted to absolute paths.
+PathConverter需要一个绝对的基本路径。
+基本路径是Markdown内容在转换时的假定位置。
+该路径用作查找相对于Markdown内容的图像和参考文件的参考。
+本质上，Markdown文件中的引用当前将在转换时相对于此基本路径。
+参考文献的存在性没有得到验证，但分析确定它是否是相对路径，如果是，则有资格进行转换。
+在**绝对**模式的​​情况下，相对的Markdown引用将被转换为绝对路径。
 
-If PathConverter is in **relative** mode, the extension will also need a relative path to convert to.  The relative path must be an absolute path to the location the HTML is assumed to live after conversion.  If the references paths can be confirmed to be relative, those references will be converted to relative paths that align to the provided relative path parameter. The idea is that a Markdown file could be found in a location that is not meant to be its final location. References within the Markdown source would link relative to the base path, but they would then be converted to be relative to it's new location -- the relative path parameter.
+如果PathConverter处于**相对**模式，那么扩展名也需要一个相对路径来转换。
+相对路径必须是转换后HTML假定位置的绝对路径。
+如果可以确定引用路径是相对的，那么这些引用将被转换为与提供的相对路径参数对齐的相对路径。
+这个想法是，一个Markdown文件可以在一个并不意味着它是最终位置的位置找到。
+Markdown源文件中的引用将链接到相对于基本路径，但它们将被转换为相对于它的新位置 - 相对路径参数。
 
-Currently PathConverter will search desired tags for `href` and `src` attributes. By default, only `a`, `script`, `img`, and `link` tags are searched.
+目前PathConverter会搜索`href`和`src`属性的所需标签。
+默认情况下，只搜索`a`，`script`，`img`和`link`标签。
 
-PathConverter is also intelligent enough to only operate on the file portion of the reference link.  Consider the following scenario:  `path/to/file.html#header-to-jump-to`.  In the example, `path/to/file.html` will be converted, but `#header-to-jump-to` will be left unaltered.
+PathConverter也足够智能，只能在参考链接的文件部分进行操作。
+考虑以下情况：`path/to/file.html＃header-to-jump-to`。
+在这个例子中，`path/to/file.html`将被转换，但是`＃header-to-jump-to`将保持不变。
 
-As mentioned before, the use cases for something like this are limited, but if you have a situation that lends well to something like this, PathConverter can help.
+正如前面提到的，像这样的用例是有限的，但是如果你有这样的情况，这种情况下，PathConverter可以帮助。
 
-## Options
+## 选项
 
-Option          | Type   | Default                    | Description
---------------- | ------ | -------------------------- |------------
-`base_path`     | string | `#!py3 ''`                  | A string indicating an absolute base path to be used to find referenced files.
-`relative_path` | string | `#!py3 ''`                  | A string indicating an absolute path that the references are to be relative to (not used when `absolute` is set `True`).
-`absolute`      | bool   | `#!py3 False`               | Determines whether paths are converted to absolute or relative.
-`tags`          | string | `#!py3 'a script img link'` | Tags (separated by spaces) that are searched to find `href` and `src` attributes.
+| 选项            | 类型   | 默认                       | 描述                                                           |
+| --------------- | ------ | -------------------------- | -------------------------------------------------------------- |
+| `base_path`     | string | `#!py3 ''`                   | 指示要用于查找的绝对基路径的字符串referenced files.            |
+| `relative_path` | string | `#!py3 ''`                   | 表示引用相对于绝对路径的字符串（绝对值设置为`true`时不使用）。 |
+| `absolute`      | bool   | `#!py3 False`              | 确定路径是否转换为绝对或相对。                                 |
+| `tags`          | string | `#!py3 'a script img link'` | 标签（用空格分隔）用于查找`href`和`src`属性。                  |

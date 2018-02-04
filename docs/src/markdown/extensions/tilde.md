@@ -1,10 +1,10 @@
 # Tilde
 
-## Overview
+## 概观
 
 Tilde optionally adds two different features which are syntactically built around the `~` character: **delete** which inserts `#!html <del></del>` tags and **subscript** which inserts `#!html <sub></sub>` tags.
 
-## Delete
+## 删除
 
 To wrap content in a **delete** tag, simply surround the text with double `~`. You can also enable `smart_delete` in the [options](#options). Smart behavior of **delete** models that of [BetterEm](betterem.md#differences).
 
@@ -32,7 +32,7 @@ To denote a subscript, you can surround the desired content in single `~`.  It u
 
     text~a\ subscript~
 
-## Options
+## 选项
 
 Option         | Type | Default     | Description
 -------------- | ---- | ----------- | -----------

@@ -1,6 +1,6 @@
 # Snippets
 
-## Overview
+## 概观
 
 Snippets is an extension to insert markdown or HTML snippets into another markdown file.  Snippets is great for situations where you have content you need to insert into multiple documents.  For instance, this document keeps all its hyperlinks in a separate file.  Then includes those hyperlinks at the bottom of a document via snippets. If a link needs to be updated, it can be updated in one location instead of updating them in multiple files.
 
@@ -10,23 +10,23 @@ Snippets can handle recursive file inclusion.  And if Snippets encounters the sa
 
 This is meant for simple file inclusion, it has no intention to implement features from complex template systems. If you need something more complex, you may consider using a template environment to process your files **before** feeding them through Python Markdown.  If you are using a document generation system, this can likely be performed via a plugin for that document system (assuming a plugin environment is available).
 
-## Snippets Notation
+## 片段符号
 
 Snippets has two modes of inserting snippets: single line and block.
 
 Single line format is done by placing the following markup for the single line notation:
 
 ```
---8<-- "filename.md" 
+--8<-- "filename.md"
 ```
 
 Or you can insert multiple files with block notation:
 
 ```
---8<-- 
+--8<--
 filename.md
 filename2.md
---8<-- 
+--8<--
 ```
 
 As you can see, the notation is ASCII scissors cutting a line followed by the file name.  In the case of the single line variant, the file name follows directly after the scissors and is quoted.  In the case of the block format, the file names follow on separate lines and an additional scissor is added afterwards to signal the end of the block.
@@ -44,15 +44,15 @@ escaped notation
 If you have a file you want to temporarily ignore, you can comment it out by prepending the path with `; ` (notice the semicolon is followed by a space).  This works for both single line and block format:
 
 ```
---8<-- "; skip.md" 
+--8<-- "; skip.md"
 
---8<-- 
+--8<--
 include.md
 ; skip.md
---8<-- 
+--8<--
 ```
 
-## Formatting Snippets
+## 格式化片段
 
 When inserting your snippet, it is important to remember that some snippets may need whitespace around them.
 
@@ -60,7 +60,7 @@ When inserting your snippet, it is important to remember that some snippets may 
 This is the file that is including the snippet.
 We want blank lines before and after the insertion:
 
---8<-- "insert.md" 
+--8<-- "insert.md"
 
 So we put blank lines around the insertion.
 ```
@@ -68,14 +68,14 @@ So we put blank lines around the insertion.
 In block format, it is important to note that empty lines are preserved for formatting:
 
 ```
---8<-- 
+--8<--
 file1.md
 
 file2.md
---8<-- 
+--8<--
 ```
 
-## Options
+## 选项
 
 Option      | Type   | Default        | Description
 ----------- | ------ | -------------- |------------

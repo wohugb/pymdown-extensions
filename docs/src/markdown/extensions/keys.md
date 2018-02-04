@@ -1,6 +1,6 @@
 # Keys
 
-## Overview
+## 概观
 
 Keys is an extension to make entering and styling keyboard key presses easier. Syntactically, Keys is built around the `+` symbol.  A key or combination of key presses is surrounded by `++` with each key press separated with a single `+`.
 
@@ -12,7 +12,7 @@ Keys is an extension to make entering and styling keyboard key presses easier. S
 
     ++ctrl+alt+delete++.
 
-## Formatting
+## 格式化
 
 By default, Keys outputs keys in the form (separator `span`s will be omitted if a separator is not provided via the [options](#options)):
 
@@ -42,7 +42,7 @@ If you would like to generate a key which isn't in the key index, you can extend
 
     ++cmd+alt+"&Uuml;"++
 
-## Strict `KBD` Output
+## 严格 `KBD` 产量
 
 According to HTML5 spec on [`kbd`](https://dev.w3.org/html5/spec-preview/the-kbd-element.html), a literal key input, is represented by a `kbd` wrapped the other `kbd`s:
 
@@ -58,11 +58,11 @@ According to HTML5 spec on [`kbd`](https://dev.w3.org/html5/spec-preview/the-kbd
 
 This is not how many people traditionally use `kbd`s for key inputs, but if you are a stickler for rules, you can enable the `strict` option to use a more "proper" format.
 
-## Key-Map Index
+## Key-Map 指数
 
 By default, Keys provides a key-map index for English US keyboards. The key-map index is a dictionary that provides all supported key names (which are used as the class in output class `key-<name>`) with their corresponding display text.  There is also a separate alias dictionary which maps some aliases to entries in the key-map index.
 
-### Alphanumeric and Space Keys
+### 字母数字和空格键
 
 Name    | Display     | Aliases
 ------- | ----------- | -------
@@ -104,7 +104,7 @@ Name    | Display     | Aliases
 `z`     | ++"Z"++     |
 `space` | ++"Space"++ | `spc`
 
-### Punctuation Keys
+### 标点符号
 
 Name            | Display  | Aliases
 --------------- | -------- | -------
@@ -132,7 +132,7 @@ Name            | Display  | Aliases
 `tilde`         | ++"~"++  |
 `underscore`    | ++"_"++  |
 
-### Navigation Keys
+### 导航键
 
 Name          | Display         | Aliases
 ------------- | --------------- | -------
@@ -146,7 +146,7 @@ Name          | Display         | Aliases
 `end`         | ++"End"++       |
 `tab`         | ++"Tab"++       | `tabulator`
 
-### Editing Keys
+### 编辑密钥
 
 Name        | Display         | Aliases
 ----------- | --------------- | -------
@@ -154,7 +154,8 @@ Name        | Display         | Aliases
 `delete`    | ++"Del"++       | `del`
 `insert`    | ++"Ins"++       | `ins`
 
-### Action Keys
+### 操作键
+
 Name           | Display            | Aliases
 -------------- | ------------------ | -------
 `break`        | ++"Break"++        | `cancel`
@@ -167,7 +168,7 @@ Name           | Display            | Aliases
 `print-screen` | ++"Print Screen"++ | `prtsc`
 `scroll-lock`  | ++"Scroll Lock"++  | `scroll`
 
-### Numeric Keypad Keys
+### 数字小键盘按键
 
 Name            | Display         | Aliases
 --------------- | --------------- | -------
@@ -192,7 +193,7 @@ Name            | Display         | Aliases
 `num-slash`     | ++"Num /"++     | `divide`
 `num-enter`     | ++"Num Enter"++ |
 
-### Modifier keys
+### 修改键
 
 Name            | Display           | Aliases
 --------------- | ----------------- | -------
@@ -213,7 +214,7 @@ Name            | Display           | Aliases
 `shift`         | ++"Shift"++       |
 `windows`       | ++"Win"++         | `win`
 
-### Function keys
+### 功能键
 
 Name  | Display   | Aliases
 ----- | --------- | -------
@@ -242,7 +243,7 @@ Name  | Display   | Aliases
 `f23` | ++"F23"++ |
 `f24` | ++"F24"++ |
 
-### Extra Keys
+### 额外的键
 
 Name                | Display               | Aliases
 ------------------- | --------------------- | -------
@@ -273,7 +274,7 @@ Name                | Display               | Aliases
 `volume-up`         | ++"Volume Up"++       | `vol-up`
 `zoom`              | ++"Zoom"++            |
 
-### Mouse
+### 鼠标
 
 Name            | Display             | Aliases
 --------------- | ------------------- | -------
@@ -283,13 +284,13 @@ Name            | Display             | Aliases
 `x-button1`     | ++"X Button 1"++    | `xbutton1`
 `x-button2`     | ++"X Button 2"++    | `xbutton2`
 
-## Extending/Modifying Key-Map Index
+## 扩展/修改键映射索引
 
 If you want to add additional keys, or override text of existing keys, you can feed in your keys via the `key_map` option. The `key_map` parameter takes a simple dictionary with *key names* that are represented by lowercase alphanumeric characters and hyphens (`-`). The values of the dictionary represent the the text that is displayed for the key in the HTML output.
 
 So if you wanted to add a custom key, you could do this: `#!py3 {"custom": "Custom Key"}`.  If you wanted to override the output of the `option` key and change it from `Option` to `Opt`, you could do this: `#!py3 {"option": "Opt"}`.
 
-## Options
+## 选项
 
 Option       | Type   | Default        | Description
 ------------ | ------ | -------------- | -----------

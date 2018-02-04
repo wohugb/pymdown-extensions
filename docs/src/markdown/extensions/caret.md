@@ -1,10 +1,10 @@
 # Caret
 
-## Overview
+## 概观
 
 Caret optionally adds two different features which are syntactically built around the `^` character. The first is **insert** which inserts `#!html <ins></ins>`.  The second is **superscript** which inserts `#!html <sup></sup>` tags.
 
-## Insert
+## 插
 
 To wrap content in an **insert** tag, simply surround the text with double `^`. You can also enable `smart_insert` in the [options](#options). Smart behavior of **insert** models that of [BetterEm](betterem.md#differences).
 
@@ -32,10 +32,10 @@ To denote a superscript, you can surround the desired content in single `^`.  It
 
     text^a\ superscript^
 
-## Options
+## 选项
 
-Option         | Type | Default | Description
+选项            | 类型 | 默认     | 描述
 -------------- | ---- | ------- | -----------
-`smart_insert` | bool | True    |Use smart logic with insert characters.
-`insert`       | bool | True    | Enable insert feature.
-`superscript`  | bool | True    |Enable superscript feature.
+`smart_insert` | bool | True    | 使用插入字符的智能逻辑。
+`insert`       | bool | True    | 启用插入功能。
+`superscript`  | bool | True    | 启用上标功能。

@@ -1,34 +1,37 @@
-# Contributing &amp; Support
+# 贡献 &amp; 支持
 
-## Bug Reports
+## 错误报告
 
-1. Please **read the documentation** and **search the issue tracker** to try and find the answer to your question **before** posting an issue.
+1. 请**阅读文档**和**搜索问题跟踪器**，在发布问题**之前**尝试找到您的问题的答案.
 
-2. When creating an issue on the repository, please provide as much info as possible:
+2. 在存储库上创建问题时，请提供尽可能多的信息:
 
-    - Version being used.
-    - Operating system.
-    - Version of Python.
-    - Errors in console.
-    - Detailed description of the problem.
-    - Examples for reproducing the error.  You can post pictures, but if specific text or code is required to reproduce the issue, please provide the text in a plain text format for easy copy/paste.
+    - 正在使用的版本。
+    - 操作系
+    - Python的版本。
+    - 控制台中的错误。
+    - 问题的详细描述。
+    - 重现错误的例子。  您可以张贴图片，但是如果需要特定的文本或代码来重现问题， 请以纯文本格式提供文本，以便复制/粘贴。
 
-    The more info provided the greater the chance someone will take the time to answer, implement, or fix the issue.
+    提供的信息越多，有人花更多的时间来回答，实施或解决问题的机会就越大。
 
-3. Be prepared to answer questions and provide additional information if required.  Issues in which the creator refuses to respond to follow up questions will be marked as stale and closed.
+3. 准备回答问题，并在需要时提供更多信息。  创作者拒绝回应问题的问题将被标记为陈旧和封闭。
 
-## Reviewing Code
+## 审查代码
 
-Take part in reviewing pull requests and/or reviewing direct commits.  Make suggestions to improve the code and discuss solutions to overcome weakness in the algorithm.
+参与审查拉取请求和/或审查直接提交。  提出改进代码的建议，并讨论克服算法弱点的解决方案。
 
-## Answer Questions in Issues
+## 在问题中回答问题
 
-Take time and answer questions and offer suggestions to people who've created issues in the issue tracker. Often people will have questions that you might have an answer for.  Or maybe you know how to help them accomplish a specific task they are asking about. Feel free to share your experience to help others out.
+花时间回答问题，并向在问题跟踪器中创建问题的人员提供建议。,通常人们会有问题，你可能会有答案。 或者，也许你知道如何帮助他们完成他们所要求的具体任务。,随意分享你的经验，帮助别人。
 
-## Pull Requests
+## 拉取请求
 
-Pull requests are welcome, and a great way to help fix bugs and add new features. If you you are interested in directly contributing to the code, please check out [Development](./development.md) for more info on the environment and process.
+拉请求是受欢迎的，这是一个很好的方法来帮助修复错误并添加新的功能。
+如果您有兴趣直接对代码作出贡献，请查看[开发文档](./development.md)了解有关环境和过程的更多信息。
 
-## Documentation Improvements
+## 文档改进
 
-A ton of time has been spent not only creating and supporting this tool and related extensions, but also spent making this documentation.  If you feel it is still lacking, show your appreciation for the tool and/or extensions by helping to improve the documentation. Check out [Development](./development.md) for more info on documentation.
+大量的时间花费在创建和支持这个工具和相关的扩展上，而且花费了这个文档。
+如果您觉得仍然缺乏，请帮助改进文档，以表示您对该工具和/或扩展的赞赏。
+查看[开发文档](./development.md)以获取更多关于文档的信息。

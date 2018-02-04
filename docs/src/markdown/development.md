@@ -1,6 +1,6 @@
-# Development
+# 发展
 
-## Project Layout
+## 项目布局
 
 There are a number of files for build, test, and continuous integration in the root of the project, but in general, the project is broken up like so.
 
@@ -20,7 +20,7 @@ Directory      | Description
 `tests`        | This contains the various tests that are run in order to ensure code health.
 `tools`        | This contains various tools that are necessary during development.
 
-## Coding Standards
+## 编码标准
 
 When writing code, the code should roughly conform to PEP8 and PEP257 suggestions.  The PyMdown Extensions project utilizes the Flake8 linter (with some additional plugins) to ensure code conforms (give or take some of the rules).  When in doubt follow the formatting hints of existing code when adding or modifying files. existing files.  Listed below are the modules used:
 
@@ -36,7 +36,7 @@ Flake8 can be run directly via the command line from the root of the project.
 flake8
 ```
 
-## Building and Editing Documents
+## 建立和编辑文件
 
 Documents are in Markdown (with with some additional syntax) and converted to HTML via Python Markdown and this extension bundle. If you would like to build and preview the documentation, you must have these packages installed:
 
@@ -51,7 +51,7 @@ In order to build and preview the documents, just run the command below from the
 mkdocs serve
 ```
 
-## Editing Document Theme
+## 编辑文档主题
 
 It isn't expected that people will need to mess with the theme, but if it is needed, a little additional work is required. The documents use the [Material][mkdocs-material] theme for [MkDocs][mkdocs] with some additional local tweaks and additions.  JavaScript additions are provided in `docs/src/js` and are in es2015 syntax and are converted to es5. Stylesheets are located at `docs/src/scss` and are written in SCSS, and are converted to CSS.  All conversions are done in a `Node.js` environment.  In order to get up and running, download and install [`Yarn`](https://yarnpkg.com/). Also, install [`Node.js`](https://nodejs.org/en/) version 6+. From the root of the project, in a terminal, enter the command below.  This command will install all the needed `Node.js` modules.
 
@@ -72,7 +72,7 @@ If you need to make changes to the `mkdocs.yml` file, do not update the one in p
 
 When serving via `yarn`, if you want to make sure that the local version of `pymdown-extensions` is used, you need to configure `yarn serve` to call with Python instead of calling the MkDocs binary: `yarn serve --mkdocs="python3 -m mkdocs"`.  This is because if you are calling Python, it will look in the current working directory first for a given module when importing, but if you call the MkDocs binary, it will instead import the installed `pymdown-extensions`. Configuring the `--mkdocs` option is also useful if `mkdocs` is not in your path, or you want to call with a specific version of Python.
 
-## Spell Checking Documents
+## 拼写检查文件
 
 During validation we build the docs and run a spell checker on them.  The spell checker script uses [Aspell][aspell].  Currently this project uses the latest Aspell.  As the latest Aspell is not available on Windows, it is not expected that everyone will install and run Aspell locally.  In order to perform the spell check, it is expected you are setup to build the documents, and that you have Aspell installed in the your system path. To initiate the spell check run the following command from the root of the project:
 
@@ -82,7 +82,7 @@ python tests/spelling.py
 
 It should print out the files with the misspelled words if any are found.  If you find it prints words that are not misspelled, you can add them in `.dictionary` in the root of the project.
 
-## Validation Tests
+## 验证测试
 
 In order to preserve good code health, a test suite has been put together with pytest (@pytest-dev/pytest). There are currently two kinds of tests: syntax and targeted.  To run these tests, you can use the following command:
 
@@ -90,7 +90,7 @@ In order to preserve good code health, a test suite has been put together with p
 python run_tests.py
 ```
 
-### Syntax
+### 句法
 
 Syntax tests are essentially text files containing Markdown. They are found under `tests/extensions`.  `test_syntax.py` scans all the files and converts the files to HTML with the extensions and options defined in `tests/extensions/tests.yml`.  They are then compared to the current stored HTML output.  If the two differ, the test fails.
 
@@ -124,7 +124,7 @@ To update and accept the differences in a single test:
 python run_tests.py --update --file tests/extensions/arithmatex.txt
 ```
 
-### Targeted
+### 目标
 
 Targeted tests are unit tests that target specific areas in the code and exercises them to ensure proper functionality.  These tests are found in `test_targeted.py`.
 
@@ -140,7 +140,7 @@ You could also run them directly with:
 py.test tests/test_targeted.py
 ```
 
-### Running Validation With Tox
+### 使用Tox运行验证
 
 Tox (@tox-dev/tox) is a great way to run the validation tests, spelling checks, and linting in virtual environments so as not to mess with your current working environment. Tox will use the specified Python version for the given environment and create a virtual environment and install all the needed requirements (minus Aspell).  You could also setup your own virtual environments with the Virtualenv module without Tox, and manually do the same.
 
@@ -176,7 +176,7 @@ To select spelling and document building:
 tox -edocuments
 ```
 
-## Code Coverage
+## 代码覆盖率
 
 When running the validation tests through Tox, it is setup to track code coverage via the Coverage (@bitbucket:ned/coveragepy) module.  Coverage is run on each `pyxx-unittests` environment.  If you've made changes to the code, you can clear the old coverage data:
 
@@ -188,7 +188,7 @@ Then run each unit test environment to and coverage will be calculated. All the 
 
 You can checkout `tox.ini` to see how this is accomplished.
 
-## Generating Emoji Indexes
+## 在里面生成表情符号
 
 The Emoji extension has emoji indexes generated from the source of Gemoji, EmojiOne, and Twemoji.  Below is the process for auto-generating these indexes.  In the case of Twemoji, it will also reference EmojiOne's short name index, so you may need to do both EmojiOne and Twemoji if the support is not satisfactory.
 

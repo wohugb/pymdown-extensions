@@ -1,111 +1,76 @@
-# License
+# 执照
 
-## PyMdown Extensions
+## PyMdown 扩展
 
-The MIT License (MIT) (Except where stated below)
+麻省理工学院执照（麻省理工学院）（除下述规定外）
 
 Copyright (c) 2014 - 2018 Isaac Muse
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+特此授予任何人获得本软件和相关文档文件（“软件”）的副本的权利，以无限制地处理本软件，包括但不限于使用，复制，修改，合并,，发布，分发，再许可和/或出售本软件的副本，并允许本软件提供给本公司的人员，但须符合以下条件：
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+上述版权声明和本许可声明应包含在本软件的所有副本或主要部分中。
+本软件按“原样”提供，不作任何明示或暗示的保证，包括但不限于对适销性，特定用途适用性和不侵权的保证。
+在任何情况下，作者或版权所有者均不对任何索赔，损害或其他责任负责，无论是因合同，侵权或其他原因，由本软件或本软件的使用或其他交易引起或与之相关的行为。 ,SOF
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## 超级粉丝
 
-## SuperFences
-
-`superfences.py` is derived from Python Markdown's fenced_code extension.
+`superfences.py`派生自Python Markdown的fenced_code扩展。
 
 ```
-Fenced Code Extension for Python Markdown
- =========================================
-This extension adds Fenced Code Blocks to Python-Markdown.
-See <https://pythonhosted.org/Markdown/extensions/fenced_code_blocks.html>
-for documentation.
-Original code Copyright 2007-2008 [Waylan Limberg](http://achinghead.com/).
-All changes Copyright 2008-2014 The Python Markdown Project
-License: [BSD](http://www.opensource.org/licenses/bsd-license.php)
+Python Markdown的围栏代码扩展
+=========================================
+这个扩展添加了Fenced Code Blocks到Python-Markdown。
+有关文档，请参见<https://pythonhosted.org/Markdown/extensions/fenced_code_blocks.html>。
+原始代码版权所有2007-2008 [Waylan Limberg](http://achinghead.com/)。
+所有更改版权所有2008-2014 Python Markdown项目许可证: [BSD](http://www.opensource.org/licenses/bsd-license.php)
 ```
 
-## Highlight
+## 高亮
 
-`highlight.py` is derived from Python Markdown's CodeHilite extension.
+`highlight.py`源自Python Markdown的CodeHilite扩展。
 
 ```
 CodeHilite Extension for Python-Markdown
  ========================================
-Adds code/syntax highlighting to standard Python-Markdown code blocks.
-See <https://pythonhosted.org/Markdown/extensions/code_hilite.html>
-for documentation.
-Original code Copyright 2006-2008 [Waylan Limberg](http://achinghead.com/).
-All changes Copyright 2008-2014 The Python Markdown Project
-License: [BSD](http://www.opensource.org/licenses/bsd-license.php)
+向标准Python-Markdown代码块添加代码/语法突出显示。
+有关文档，请参阅<https://pythonhosted.org/Markdown/extensions/code_hilite.html>。
+原始代码版权所有2006-2008 [Waylan Limberg](http://achinghead.com/)。
+所有更改版权所有2008-2014 Python Markdown项目许可证: [BSD](http://www.opensource.org/licenses/bsd-license.php)
 ```
 
 ## ExtraRawHTML
 
-`extrarawhtml.py` is a literal copy and paste from Python Markdown's Extra extension.
-It basically splits out the raw html markdown parsing into a separate extension that can
-be used even if it is not desired to use all of 'extra'.
-
+`extrarawhtml.py`是Python Markdown额外扩展的文字复制和粘贴。
+它基本上把原始的html markdown分解成一个单独的扩展，即使不需要使用所有的'extra'，也可以使用它。
 ```
-Python-Markdown Extra Extension
- ===============================
-See <https://pythonhosted.org/Markdown/extensions/extra.html>
-for documentation.
-Copyright The Python Markdown Project
-License: [BSD](http://www.opensource.org/licenses/bsd-license.php)
+Python-Markdown额外的扩展
+===============================
+有关文档，请参阅<https://pythonhosted.org/Markdown/extensions/extra.html>。
+版权所有Python Markdown项目许可证：[BSD](http://www.opensource.org/licenses/bsd-license.php)
 ```
 
-## Gemoji Index
+## Emoji索引
 
-`gemoji_db.py` is generated from Gemoji's source code: @github/gemoji.
-
+`gemoji_db.py`是从Gemoji的源代码生成的：@github/gemoji。
 ```
-Copyright (c) 2013 GitHub, Inc.
+版权所有（c）2013 GitHub，Inc.
 
-Permission is hereby granted, free of charge, to any person
-obtaining a copy of this software and associated documentation
-files (the "Software"), to deal in the Software without
-restriction, including without limitation the rights to use,
-copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the
-Software is furnished to do so, subject to the following
-conditions:
+特此授予任何人获得本软件和相关文档文件（“软件”）的副本的权利，以无限制地处理本软件，包括但不限于使用，复制，修改，合并,，发布，分发，再许可和/或出售本软件的副本，并允许本软件提供给他人，但须符合以下条件:
 
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
+上述版权声明和本许可声明应包含在本软件的所有副本或主要部分中。
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
+本软件按“原样”提供，不作任何明示或暗示的保证，包括但不限于对适销性，特定用途适用性和非侵权性的保证.
+在任何情况下，作者或版权所有者均不对任何索赔，损害或其他责任负责，无论是因合同，侵权或其他原因，由本软件或本软件的使用或其他交易引起或与之相关的行为。,软件。
 ```
 
-## EmojiOne Index
+## EmojiOne索引
 
-`emoji1_db.py` is generated from EmojiOne's source code: @Ranks/emojione
+`emoji1_db.py`是从EmojiOne的源代码生成的：@Ranks/emojione
 
 ```
 EmojiOne Non-Artwork
 
-Applies to the JavaScript, JSON, PHP, CSS, HTML files, and everything else not covered under the artwork license above.
+适用于JavaScript，JSON，PHP，CSS，HTML文件以及上述艺术作品许可下未涵盖的所有内容。
 License: MIT
-Complete Legal Terms: http://opensource.org/licenses/MIT
+完整的法律条款： http://opensource.org/licenses/MIT
 ```
